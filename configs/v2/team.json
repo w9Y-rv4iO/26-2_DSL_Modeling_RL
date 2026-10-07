@@ -1,0 +1,32 @@
+{
+  "_note": "v2 seed-assignment record (historical): which member ran which arm on which seeds. THREE members trained level by level (Lv1 -> Lv2 -> Lv3), TWO trained directly on the final map (Lv3). The hypotheses and the stopping rule were fixed in docs/study-v2-protocol.md before any run. analyze.py --results results/v2 --configs configs/v2 --team configs/v2/team.json reads this file for its seed-status table.",
+
+  "design": "unpaired, 3 curriculum runs per round vs 2 direct runs per round",
+
+  "why_3_2_and_not_4_1": "v1's 4-vs-1 split worked in the end — three rounds made it 12-vs-3 and the run-level permutation test reached p=0.0022, its floor at that size. The problem was that it only worked in the end: after ONE round the floor is 1/C(5,1)=0.2, so the first two thirds of the experiment could not have produced a significant result whatever the runs said, and the control arm's seed spread stayed unmeasurable at n=1 for two full rounds. 3-vs-2 fixes both. Per-round floor drops to 1/C(5,2)=0.1; two rounds give 6-vs-4 at 1/C(10,4)=0.0048 (v1 needed three rounds to beat that); and the control arm has n=2 from round one, so its variance — the thing the whole comparison divides by — is estimated immediately rather than borrowed from the other arm.",
+
+  "seed_allocation": "Unchanged from v1: base seeds 1..5 to member1..member5 in order, +10 per extra round, so member i owns the block {i, i+10, i+20, ...} and no two members can collide. Seed 0 stays unassigned so a stray *_seed0.json is visibly an unclaimed run. v2 results go to results/v2/, so reusing the v1 seed numbers cannot overwrite a v1 file — and it is deliberate: same seed means the same PPO weight init, which removes one source of noise from any v1/v2 comparison of the same arm.",
+
+  "arm_assignment": "member2 keeps the direct arm from v1; the second direct slot goes to member5.",
+
+  "arms": {
+    "curriculum": "configs/v2/lv1.json -> lv2.json -> lv3.json (weight transfer via --init)",
+    "direct": "configs/v2/lv3_direct.json (from scratch on Lv3, same total env steps)"
+  },
+
+  "members": [
+    {"member": "member1", "arm": "curriculum", "seeds": [1, 11, 21], "run": "scripts/v2/run_curriculum.sh <seed>"},
+    {"member": "member2", "arm": "direct",     "seeds": [2, 12, 22], "run": "scripts/v2/run_direct.sh <seed>"},
+    {"member": "member3", "arm": "curriculum", "seeds": [3, 13, 23], "run": "scripts/v2/run_curriculum.sh <seed>"},
+    {"member": "member4", "arm": "curriculum", "seeds": [4, 14, 24], "run": "scripts/v2/run_curriculum.sh <seed>"},
+    {"member": "member5", "arm": "direct",     "seeds": [5, 15, 25], "run": "scripts/v2/run_direct.sh <seed>"}
+  ],
+
+  "required_rounds": 3,
+
+  "why_three_rounds": "All three seeds in each block were planned as required, not as a stretch goal. v1 listed one round as required and in practice ran three, which is the honest number to plan for. The floors: one round (3-vs-2) is 1/C(5,2) = 0.1, so it cannot reach p<0.05 whatever the runs say; two rounds (6-vs-4) is 0.0048; three rounds (9-vs-6) is 1/C(15,6) = 0.0002. That last figure is the reason 3-vs-2 was worth the change — v1 also finished with 15 runs, but at 12-vs-3 its floor was 0.0022, an order of magnitude coarser than the same compute buys here. If the group ends up able to afford only one or two rounds, say so BEFORE starting and read the result accordingly — do not run a short experiment and then report a p-value as if the design had supported it.",
+
+  "study_2_costs_no_training_runs": "The generator-placement question is answered by RE-SCORING these same checkpoints under a randomised layout (scripts/v2/run_crosseval.sh), not by training a separate arm. It runs after a seed's training finishes and takes minutes.",
+
+  "if_you_run_out_of_listed_seeds": "Further runs continue with +10 in a member's block (35, 45, ...). Any seed not in this file is accepted by the scripts as a spare run; they only refuse to overwrite an existing result file (FORCE=1 overrides that)."
+}

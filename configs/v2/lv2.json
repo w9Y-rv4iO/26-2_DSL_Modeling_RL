@@ -1,0 +1,14 @@
+{
+  "_note": "v2 curriculum stage 2/3: + generators + exit gates, still no interior obstacles. Run with --init <lv1 run>/model.zip.",
+  "map": "Lv2",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 589824,
+  "items": false,
+  "reward": "crossplay",
+  "required_generators": 3,
+  "active_exits": 3,
+  "random_spawns": true,
+  "late_exits": true,
+  "random_generators": false
+}

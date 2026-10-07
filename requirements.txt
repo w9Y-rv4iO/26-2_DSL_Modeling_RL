@@ -1,0 +1,25 @@
+# playing (main.py)
+pygame>=2.5
+
+# RL: player training (train.py / evaluate.py, crossplay/), map-edit MDP (mapstudy/)
+gymnasium>=0.29
+# <2 is not a preference: the pinned torch that stable-baselines3 pulls in is
+# built against the numpy 1.x C API, and a numpy 2.x install makes every
+# `torch.from_numpy` fail with "Failed to initialize NumPy: _ARRAY_API not found".
+numpy<2
+stable-baselines3>=2.0
+
+# the map-designer study (mapgen/) — scipy for design.py/analyze.py,
+# sb3-contrib for the maskable PPO in train_designer.py, matplotlib for figures
+scipy<1.14
+sb3-contrib>=2.0
+matplotlib
+# linear-model CV R² block in mapgen/analyze.py (committed analysis.json)
+scikit-learn
+
+# gameplay clips (scripts/record.py) — mp4 via the bundled ffmpeg
+imageio
+imageio-ffmpeg
+
+# tests
+pytest

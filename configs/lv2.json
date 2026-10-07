@@ -1,0 +1,8 @@
+{
+  "_note": "Curriculum stage 2/3: + generators + exit gates, still no interior obstacles. Run with --init <lv1 run>/model.zip.",
+  "map": "Lv2",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 589824,
+  "items": false
+}

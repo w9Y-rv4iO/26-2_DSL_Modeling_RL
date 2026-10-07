@@ -1,0 +1,549 @@
+{
+ "scores": {
+  "ridge": {
+   "train_r2": 0.6671009914234101,
+   "split_r2": -0.19157908480315267,
+   "held_out_r2": 0.12525080731579166,
+   "held_out_r2_kind": "family-grouped 5-fold out-of-fold over all n, mean of 4 fold seeds",
+   "grouped_oof_r2": {
+    "per_seed": {
+     "0": 0.33210411792574657,
+     "1": 0.22885664337028266,
+     "2": 0.17801156598663959,
+     "3": -0.23796909801950217
+    },
+    "mean": 0.12525080731579166,
+    "sd": 0.25048942669778285,
+    "min": -0.23796909801950217,
+    "max": 0.33210411792574657,
+    "folds": 5,
+    "seeds": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n_groups": 82
+   },
+   "ungrouped_oof_r2": 0.23471127886148224,
+   "leakage": 0.10946047154569058
+  },
+  "knn(k=5)": {
+   "train_r2": 0.78270245941167,
+   "split_r2": 0.06219931979800064,
+   "held_out_r2": 0.2426702054055499,
+   "held_out_r2_kind": "family-grouped 5-fold out-of-fold over all n, mean of 4 fold seeds",
+   "grouped_oof_r2": {
+    "per_seed": {
+     "0": 0.25255783635631524,
+     "1": 0.2016747459961159,
+     "2": 0.25490710810432027,
+     "3": 0.2615411311654482
+    },
+    "mean": 0.2426702054055499,
+    "sd": 0.027593758743019225,
+    "min": 0.2016747459961159,
+    "max": 0.2615411311654482,
+    "folds": 5,
+    "seeds": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n_groups": 82
+   },
+   "ungrouped_oof_r2": 0.34798365298408707,
+   "leakage": 0.10531344757853717
+  },
+  "gbm(d2,200)": {
+   "train_r2": 0.9374520953651414,
+   "split_r2": 0.2699266674727785,
+   "held_out_r2": 0.07126071904583978,
+   "held_out_r2_kind": "family-grouped 5-fold out-of-fold over all n, mean of 4 fold seeds",
+   "grouped_oof_r2": {
+    "per_seed": {
+     "0": 0.12654342346181446,
+     "1": 0.2150235558134802,
+     "2": 0.010267769155584916,
+     "3": -0.06679187224752048
+    },
+    "mean": 0.07126071904583978,
+    "sd": 0.12450246121014363,
+    "min": -0.06679187224752048,
+    "max": 0.2150235558134802,
+    "folds": 5,
+    "seeds": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n_groups": 82
+   },
+   "ungrouped_oof_r2": 0.4923008189132184,
+   "leakage": 0.42104009986737867
+  }
+ },
+ "alpha": 1.0,
+ "n": 150,
+ "cross_validation": {
+  "n_rows": 150,
+  "n_groups": 82,
+  "family_sizes": [
+   7,
+   7,
+   7,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "icc_target_within_family": 0.3435731740592718,
+  "effective_n": 97.93566384739579,
+  "feature_matrix": "features (normalize_metrics(gm.metrics()))",
+  "why": "81 of the 150 rows are 13 mutation families of 6-7; a row-shuffled fold puts a parent map in train and its 1-edit mutant in test. `held_out_r2` is the family-grouped estimate; `ungrouped_oof_r2` is the leaky one, kept so the difference is visible."
+ },
+ "coefficients": {
+  "mean_pair_dist": 0.02788089325867386,
+  "openness_std": -0.024373338084690784,
+  "sight_mean": -0.01772446324893563,
+  "choke_frac": -0.017710049025786444,
+  "exit_spread": 0.015734605688636542,
+  "openness_mean": -0.015535294139938028,
+  "station_spread": 0.014898145135338265,
+  "spawn_gap": -0.014520922198333364,
+  "loop_frac": 0.011774869534018722,
+  "floor_frac": 0.010872650696588205,
+  "wall_frac": -0.01087265069658819,
+  "station_exit_min": -0.00997770860860502,
+  "diameter": 0.0077348069680035795,
+  "mean_degree": -0.003930951594435193,
+  "dead_end_frac": 0.000772648449371776
+ },
+ "h3": {
+  "balance_error": {
+   "n": 150,
+   "n_groups": 82,
+   "family_size": 14,
+   "metric_keys": 15,
+   "excluded_from_family": {
+    "wall_frac": {
+     "redundant_with": "floor_frac",
+     "pearson": -1.0,
+     "distinct_sums": [
+      1.0
+     ],
+     "n_distinct_sums": 1
+    }
+   },
+   "icc_within_family": 0.35493289013656903,
+   "effective_n": 97.33436479648364,
+   "p_kind": "family-level permutation (82 groups)",
+   "p_floor": 4.999750012499375e-05,
+   "rows": [
+    {
+     "metric": "floor_frac",
+     "rho": -0.3356090199264674,
+     "p": 0.02864856757162142,
+     "p_holm": 0.17189140542972853,
+     "p_rowperm": 9.99950002499875e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "wall_frac",
+     "rho": 0.3356090199264674,
+     "p": 0.029398530073496326,
+     "p_holm": 0.17189140542972853,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": false,
+     "significant": false,
+     "redundant_with": "floor_frac",
+     "redundant_pearson": -1.0
+    },
+    {
+     "metric": "mean_degree",
+     "rho": 0.43870452601313786,
+     "p": 0.003399830008499575,
+     "p_holm": 0.030598470076496177,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "dead_end_frac",
+     "rho": 0.03995338851540584,
+     "p": 0.9184540772961352,
+     "p_holm": 1.0,
+     "p_rowperm": 0.631768411579421,
+     "p_holm_rowperm": 0.631768411579421,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "openness_mean",
+     "rho": 0.42492605992826404,
+     "p": 0.004149792510374482,
+     "p_holm": 0.0311984400779961,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "openness_std",
+     "rho": 0.5907115469813051,
+     "p": 4.999750012499375e-05,
+     "p_holm": 0.0006999650017499125,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "diameter",
+     "rho": -0.5404254911341716,
+     "p": 4.999750012499375e-05,
+     "p_holm": 0.0006999650017499125,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "mean_pair_dist",
+     "rho": -0.529313726502394,
+     "p": 0.00014999250037498125,
+     "p_holm": 0.0016499175041247937,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "loop_frac",
+     "rho": -0.11352523718230281,
+     "p": 0.8063096845157742,
+     "p_holm": 1.0,
+     "p_rowperm": 0.16749162541872906,
+     "p_holm_rowperm": 0.5024748762561871,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "choke_frac",
+     "rho": 0.10365688929570803,
+     "p": 0.7586620668966552,
+     "p_holm": 1.0,
+     "p_rowperm": 0.20608969551522424,
+     "p_holm_rowperm": 0.5024748762561871,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "spawn_gap",
+     "rho": -0.31107011406205953,
+     "p": 0.041797910104494775,
+     "p_holm": 0.20898955052247387,
+     "p_rowperm": 0.000199990000499975,
+     "p_holm_rowperm": 0.000999950002499875,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "station_spread",
+     "rho": -0.551462064212019,
+     "p": 4.999750012499375e-05,
+     "p_holm": 0.0006999650017499125,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "station_exit_min",
+     "rho": -0.1808129415832043,
+     "p": 0.16689165541722914,
+     "p_holm": 0.6675666216689166,
+     "p_rowperm": 0.027848607569621518,
+     "p_holm_rowperm": 0.11139443027848607,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "exit_spread",
+     "rho": -0.35244182807992275,
+     "p": 0.0038998050097495125,
+     "p_holm": 0.0311984400779961,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "sight_mean",
+     "rho": 0.5483078754843964,
+     "p": 0.00014999250037498125,
+     "p_holm": 0.0016499175041247937,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    }
+   ]
+  },
+  "runner_win_rate": {
+   "n": 150,
+   "n_groups": 82,
+   "family_size": 14,
+   "metric_keys": 15,
+   "excluded_from_family": {
+    "wall_frac": {
+     "redundant_with": "floor_frac",
+     "pearson": -1.0,
+     "distinct_sums": [
+      1.0
+     ],
+     "n_distinct_sums": 1
+    }
+   },
+   "icc_within_family": 0.3435731740592718,
+   "effective_n": 97.93566384739579,
+   "p_kind": "family-level permutation (82 groups)",
+   "p_floor": 4.999750012499375e-05,
+   "rows": [
+    {
+     "metric": "floor_frac",
+     "rho": 0.33623027707179914,
+     "p": 0.02774861256937153,
+     "p_holm": 0.1664916754162292,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "wall_frac",
+     "rho": -0.33623027707179914,
+     "p": 0.02774861256937153,
+     "p_holm": 0.1664916754162292,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": false,
+     "significant": false,
+     "redundant_with": "floor_frac",
+     "redundant_pearson": -1.0
+    },
+    {
+     "metric": "mean_degree",
+     "rho": -0.4361047107898632,
+     "p": 0.0030998450077496125,
+     "p_holm": 0.027898605069746514,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "dead_end_frac",
+     "rho": -0.036272056590044136,
+     "p": 0.9258037098145093,
+     "p_holm": 1.0,
+     "p_rowperm": 0.6616169191540423,
+     "p_holm_rowperm": 0.6616169191540423,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "openness_mean",
+     "rho": -0.4179337678746333,
+     "p": 0.004449777511124443,
+     "p_holm": 0.03559822008899555,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "openness_std",
+     "rho": -0.5868285090944408,
+     "p": 4.999750012499375e-05,
+     "p_holm": 0.0006999650017499125,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "diameter",
+     "rho": 0.5330791480977731,
+     "p": 4.999750012499375e-05,
+     "p_holm": 0.0006999650017499125,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "mean_pair_dist",
+     "rho": 0.5227887508102649,
+     "p": 0.00014999250037498125,
+     "p_holm": 0.0016499175041247937,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "loop_frac",
+     "rho": 0.11213112156431096,
+     "p": 0.8069596520173992,
+     "p_holm": 1.0,
+     "p_rowperm": 0.17369131543422828,
+     "p_holm_rowperm": 0.5210739463026848,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "choke_frac",
+     "rho": -0.10357496972243531,
+     "p": 0.7488125593720314,
+     "p_holm": 1.0,
+     "p_rowperm": 0.20618969051547423,
+     "p_holm_rowperm": 0.5210739463026848,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "spawn_gap",
+     "rho": 0.2985327550538001,
+     "p": 0.06339683015849208,
+     "p_holm": 0.3169841507924604,
+     "p_rowperm": 0.00034998250087495624,
+     "p_holm_rowperm": 0.0017499125043747813,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "station_spread",
+     "rho": 0.5423429242783815,
+     "p": 4.999750012499375e-05,
+     "p_holm": 0.0006999650017499125,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "station_exit_min",
+     "rho": 0.1729013183630386,
+     "p": 0.1857407129643518,
+     "p_holm": 0.7429628518574072,
+     "p_rowperm": 0.03629818509074546,
+     "p_holm_rowperm": 0.14519274036298185,
+     "in_family": true,
+     "significant": false
+    },
+    {
+     "metric": "exit_spread",
+     "rho": 0.3371321315574828,
+     "p": 0.005149742512874356,
+     "p_holm": 0.0360481975901205,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    },
+    {
+     "metric": "sight_mean",
+     "rho": -0.5436882765360449,
+     "p": 0.00014999250037498125,
+     "p_holm": 0.0016499175041247937,
+     "p_rowperm": 4.999750012499375e-05,
+     "p_holm_rowperm": 0.0006999650017499125,
+     "in_family": true,
+     "significant": true
+    }
+   ]
+  }
+ }
+}

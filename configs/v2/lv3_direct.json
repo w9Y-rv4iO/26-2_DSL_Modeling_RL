@@ -1,0 +1,14 @@
+{
+  "_note": "v2 control arm: train from scratch on the final map. steps = lv1+lv2+lv3 exactly (393216+589824+1015808 = 1998848), so both arms see the same number of env steps. Budgets are unchanged from v1 so the two studies' learning curves share an x axis.",
+  "map": "Lv3",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 1998848,
+  "items": false,
+  "reward": "crossplay",
+  "required_generators": 3,
+  "active_exits": 3,
+  "random_spawns": true,
+  "late_exits": true,
+  "random_generators": false
+}

@@ -1,0 +1,494 @@
+
+
+==============================================================================
+0. COVERAGE
+==============================================================================
+
+training runs finished: 54
+  tagger  33
+  runner  21
+
+evaluation cells: 429
+kind
+argmax                4860
+control_heur_heur      840
+control_heur_rand      840
+control_rand_heur      840
+indist                4860
+noocc_heur_heur        720
+transfer             13230
+
+
+==============================================================================
+1. SCRIPTED CONTROLS - what the fog axis does before any learning
+==============================================================================
+
+Runner win rate, 40 rounds x 3 maps = 120 rounds per cell. These are the ladder
+rungs every RL number below is read against: 'rand tagger' is the tagger's floor,
+'heur/heur' is the bar it must clear, and the spread between them is the room
+available for learning to show up at that radius.
+
+arm          px           heur/heur   heur vs rand runner   rand tagger vs heur
+-------------------------------------------------------------------------------
+r080         80         22.5% [16%,31%]          0.0% [0%,3%]      99.2% [95%,100%]
+r140        140         25.0% [18%,33%]          0.0% [0%,3%]       97.5% [93%,99%]
+r220        220         23.3% [17%,32%]          0.0% [0%,3%]       97.5% [93%,99%]
+r340        340         17.5% [12%,25%]          0.0% [0%,3%]       97.5% [93%,99%]
+r500        500         16.7% [11%,24%]          0.0% [0%,3%]       97.5% [93%,99%]
+r1200      1200         18.3% [12%,26%]          0.0% [0%,3%]       97.5% [93%,99%]
+fog_off     inf            0.0% [0%,3%]          0.0% [0%,3%]       97.5% [93%,99%]
+
+behaviour of the heuristic pair (heur/heur cells)
+-------------------------------------------------
+arm         gens  repair_s   seen_s  survived_s  first_gen_s
+r080        1.61      11.5      3.7        23.5          9.3
+r140        1.52      10.9      6.3        26.5          9.4
+r220        1.39      10.1     12.4        31.4         10.0
+r340        1.32      10.2     16.3        35.0         10.6
+r500        1.32      10.2     17.9        36.7         11.7
+r1200       1.36      10.3     18.9        37.5         11.8
+fog_off     0.21       3.8     33.2        33.2         10.7
+
+
+==============================================================================
+1b. DECOMPOSING FOG: limited range vs wall occlusion
+==============================================================================
+
+Fog is two mechanisms at once: sight is *range-limited* and walls *occlude*. The
+radius axis only moves the first. Re-running the scripted pair with
+occlusion_enabled=False leaves a plain circular sight range that sees through
+walls, so the two columns differ in exactly one mechanism at each radius.
+
+Read the bottom rows as a consistency check: at r1200 the range never binds, so
+'range only' there should reproduce the fog_off row (full information), and
+'both' should reproduce occlusion-only vision.
+
+arm         both (shipped)       range only    delta  seen_s both  seen_s range
+-------------------------------------------------------------------------------
+r080                22.5%            23.3%    +0.8%          3.7           4.4
+r140                25.0%            12.5%   -12.5%          6.3           7.4
+r220                23.3%             2.5%   -20.8%         12.4          24.3
+r340                17.5%             0.0%   -17.5%         16.3          30.0
+r500                16.7%             0.0%   -16.7%         17.9          32.3
+r1200               18.3%             0.0%   -18.3%         18.9          33.2
+fog_off              0.0%           (same)                  33.2
+
+generators finished, out of the 3 needed
+----------------------------------------
+arm          both   range only
+r080         1.61         1.67
+r140         1.52         1.20
+r220         1.39         0.73
+r340         1.32         0.44
+r500         1.32         0.26
+r1200        1.36         0.21
+fog_off      0.21
+
+
+==============================================================================
+2a. PPO TAGGER trained and evaluated at the same radius
+==============================================================================
+
+tagger win rate. 30 rounds x 3 maps per seed; opponent is the matching heuristic.
+'scripted' is that same heuristic playing tagger at the same radius (identical opponent),
+so the gap is a like-for-like skill difference. 'norm' rescales PPO onto the
+random->heuristic interval: 0 = no better than random, 1 = heuristic parity.
+
+arm      PPO (seed mean +- sd)                        pooled 95% CI  scripted   random   norm
+---------------------------------------------------------------------------------------------
+r080     38.1% +-8.4%  (seeds: 48% 32% 34%)         38.1% [33%,44%]      78%       1%   0.49
+r140     41.1% +-1.9%  (seeds: 39% 42% 42%)         41.1% [35%,47%]      75%       2%   0.53
+r220     37.8% +-9.1%  (seeds: 36% 30% 48%)         37.8% [32%,44%]      77%       2%   0.48
+r340     33.7% +-7.4%  (seeds: 42% 30% 29%)         33.7% [28%,40%]      82%       2%   0.39
+r500     34.4% +-3.8%  (seeds: 30% 37% 37%)         34.4% [29%,40%]      83%       2%   0.40
+r1200    25.9% +-8.2%  (seeds: 17% 29% 32%)         25.9% [21%,31%]      82%       2%   0.30
+fog_off  35.6% +-5.9%  (seeds: 40% 38% 29%)         35.6% [30%,41%]     100%       2%   0.34
+
+paired difference vs the scripted policy at the same radius (positive = PPO better)
+-----------------------------------------------------------------------------------
+arm         delta win     95% CI (round-paired)  pairs
+r080          -40.7%          [-52.2%, -28.9%]     90
+r140          -35.6%          [-48.1%, -22.2%]     90
+r220          -40.0%          [-50.7%, -28.9%]     90
+r340          -50.7%          [-61.1%, -40.0%]     90
+r500          -51.1%          [-61.1%, -40.4%]     90
+r1200         -55.2%          [-65.9%, -43.7%]     90
+fog_off       -64.4%          [-71.9%, -56.7%]     90
+
+behaviour, seed-pooled
+----------------------
+arm         gens  repair_s   seen_s  survived_s
+r080        2.45      15.0      2.5        47.5
+r140        2.37      14.5      3.7        52.2
+r220        2.41      14.7      8.7        48.7
+r340        2.47      15.0     13.5        46.9
+r500        2.44      14.9     13.3        47.3
+r1200       2.56      15.6     11.8        41.7
+fog_off     2.49      15.2     48.7        48.7
+
+monotone trend across the controlled radius axis (fog_off excluded)
+-------------------------------------------------------------------
+win rate vs radius: Spearman rho = -0.536, permutation p = 0.0232  (n = 18 seed-level points)
+normalised score vs radius: Spearman rho = -0.886, permutation p = 0.0326  (n = 6 arm means)
+
+
+==============================================================================
+2b. PPO RUNNER trained and evaluated at the same radius
+==============================================================================
+
+runner win rate. 30 rounds x 3 maps per seed; opponent is the matching heuristic.
+'scripted' is that same heuristic playing runner at the same radius (identical opponent),
+so the gap is a like-for-like skill difference. 'norm' rescales PPO onto the
+random->heuristic interval: 0 = no better than random, 1 = heuristic parity.
+
+arm      PPO (seed mean +- sd)                        pooled 95% CI  scripted   random   norm
+---------------------------------------------------------------------------------------------
+r080      0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]      22%       0%   0.00
+r140      0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]      25%       0%   0.00
+r220      0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]      23%       0%   0.00
+r340      0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]      18%       0%   0.00
+r500      0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]      17%       0%   0.00
+r1200     0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]      18%       0%   0.00
+fog_off   0.0% +-0.0%  (seeds: 0% 0% 0%)               0.0% [0%,1%]       0%       0%    nan
+
+paired difference vs the scripted policy at the same radius (positive = PPO better)
+-----------------------------------------------------------------------------------
+arm         delta win     95% CI (round-paired)  pairs
+r080          -21.1%          [-30.0%, -13.3%]     90
+r140          -23.3%          [-32.2%, -15.6%]     90
+r220          -22.2%          [-31.1%, -14.4%]     90
+r340          -15.6%           [-23.3%, -8.9%]     90
+r500          -14.4%           [-22.2%, -7.8%]     90
+r1200         -18.9%          [-26.7%, -11.1%]     90
+fog_off        +0.0%            [+0.0%, +0.0%]     90
+
+behaviour, seed-pooled
+----------------------
+arm         gens  repair_s   seen_s  survived_s
+r080        0.00       0.0      0.2        62.6
+r140        0.00       0.1      0.7        43.3
+r220        0.02       0.4      1.0        31.3
+r340        0.00       0.1      1.5        24.2
+r500        0.00       0.2      1.8        27.8
+r1200       0.09       1.1      3.6        22.8
+fog_off     0.20       2.2     13.1        13.1
+
+monotone trend across the controlled radius axis (fog_off excluded)
+-------------------------------------------------------------------
+win rate vs radius: undefined - the outcome is constant across every arm (a floor), so there is no rank order to correlate
+normalised score vs radius: undefined - the outcome is constant across every arm (a floor), so there is no rank order to correlate
+
+
+==============================================================================
+3a. TRANSFER - tagger trained at one radius, played at another
+==============================================================================
+
+tagger win rate, 15 rounds x 3 maps x 3 seeds = 135 rounds per cell.
+Rows = training radius, columns = evaluation radius. The heuristic opponent also
+changes with the evaluation radius, so a column is a fixed *situation*, not a
+fixed opponent strength - read down a column, and compare rows within it.
+
+train\eval       r080     r140     r220     r340     r500    r1200  fog_off      own    mean
+--------------------------------------------------------------------------------------------
+r080             36%      39%      36%      36%      27%      24%      13%      36%     30%
+r140             10%      45%      41%      32%      31%      22%       9%      45%     27%
+r220              4%      24%      36%      29%      30%      24%      10%      36%     23%
+r340              9%      27%      35%      32%      27%      21%      11%      32%     23%
+r500              9%      25%      36%      31%      30%      24%      13%      30%     24%
+r1200            11%      26%      39%      32%      32%      29%      11%      29%     26%
+fog_off           7%      18%      21%      23%      18%      16%      27%      27%     19%
+
+is the diagonal special? (trained-here vs best-other-arm, per eval radius)
+--------------------------------------------------------------------------
+eval arm     own-arm  best other     from    delta
+r080             36%         11%    r1200   +24.4%
+r140             45%         39%     r080    +6.7%
+r220             36%         41%     r140    -5.2%
+r340             32%         36%     r080    -4.4%
+r500             30%         32%    r1200    -1.5%
+r1200            29%         24%     r080    +4.4%
+fog_off          27%         13%     r080   +14.1%
+
+
+==============================================================================
+3b. TRANSFER - runner trained at one radius, played at another
+==============================================================================
+
+runner win rate, 15 rounds x 3 maps x 3 seeds = 135 rounds per cell.
+Rows = training radius, columns = evaluation radius. The heuristic opponent also
+changes with the evaluation radius, so a column is a fixed *situation*, not a
+fixed opponent strength - read down a column, and compare rows within it.
+
+train\eval       r080     r140     r220     r340     r500    r1200  fog_off      own    mean
+--------------------------------------------------------------------------------------------
+r080              0%       0%       0%       0%       0%       0%       0%       0%      0%
+r140              0%       0%       0%       0%       0%       0%       0%       0%      0%
+r220              0%       0%       0%       0%       0%       0%       0%       0%      0%
+r340              0%       0%       0%       0%       0%       0%       0%       0%      0%
+r500              0%       0%       0%       0%       0%       0%       0%       0%      0%
+r1200             0%       0%       0%       0%       0%       0%       0%       0%      0%
+fog_off           0%       0%       0%       0%       0%       0%       0%       0%      0%
+
+is the diagonal special? (trained-here vs best-other-arm, per eval radius)
+--------------------------------------------------------------------------
+eval arm     own-arm  best other     from    delta
+r080              0%          0%  fog_off    +0.0%
+r140              0%          0%  fog_off    +0.0%
+r220              0%          0%  fog_off    +0.0%
+r340              0%          0%  fog_off    +0.0%
+r500              0%          0%  fog_off    +0.0%
+r1200             0%          0%  fog_off    +0.0%
+fog_off           0%          0%     r080    +0.0%
+
+
+==============================================================================
+4. FOG x BELIEF-MEMORY INTERACTION (tagger)
+==============================================================================
+
+memory_time is how long the observation keeps a lost opponent's last-known
+position before it decays (observation.py: last_seen / since_seen). If the
+hand-built belief state is what compensates for fog, its value should grow as the
+sight radius shrinks - i.e. the two rows should not be parallel.
+
+arm     memory_time  tagger win (seed mean +- sd, per seed)
+-----------------------------------------------------------
+r140    0.5 s        39.3% +-7.1%  (seeds: 43% 43% 31%)
+r140    4 s          41.1% +-1.9%  (seeds: 39% 42% 42%)
+r140    12 s         38.9% +-9.1%  (seeds: 41% 29% 47%)
+r500    0.5 s        27.4% +-8.6%  (seeds: 18% 34% 30%)
+r500    4 s          34.4% +-3.8%  (seeds: 30% 37% 37%)
+r500    12 s         27.4% +-6.1%  (seeds: 21% 33% 28%)
+
+effect of long vs short memory, per fog level
+---------------------------------------------
+  r140     mem=12s minus mem=0.5s : -0.4%
+  r500     mem=12s minus mem=0.5s : +0.0%
+
+  interaction (effect at r140 minus effect at r500): -0.4%
+  positive = memory matters more in heavier fog
+
+
+==============================================================================
+5. SAMPLING vs ARGMAX at each fog level
+==============================================================================
+
+The repo's own finding is that a PPO policy's argmax is a policy that was never
+trained (88% sampling vs 33% greedy on a CLASSIC runner). Repeating it per fog
+level asks whether that gap is a property of the algorithm or of the task: greedy
+play should hurt most where the policy has to keep exploring, i.e. in heavy fog.
+
+tagger: arm        sampling   argmax    delta
+---------------------------------------------
+       r080            38%      34%    -3.7%
+       r140            41%      39%    -2.2%
+       r220            38%      31%    -6.7%
+       r340            34%      34%    +0.0%
+       r500            34%      29%    -5.6%
+       r1200           26%      26%    -0.4%
+       fog_off         36%      26%    -9.3%
+
+runner: arm        sampling   argmax    delta
+---------------------------------------------
+       r080             0%       0%    +0.0%
+       r140             0%       0%    +0.0%
+       r220             0%       0%    +0.0%
+       r340             0%       0%    +0.0%
+       r500             0%       0%    +0.0%
+       r1200            0%       0%    +0.0%
+       fog_off          0%       0%    +0.0%
+
+
+==============================================================================
+6a. LEARNING CURVES - tagger, episodes binned by timestep
+==============================================================================
+
+Own-role win rate during training (the opponent is the heuristic; these are
+training episodes, not evaluation rounds, so they run hotter than the tables
+above). Seeds pooled per bin.
+
+r080  (3 seeds, 5133 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167760     5%   2.93    17.6    0.7      29.4   1117
+   335672    14%   2.81    17.0    1.4      36.0    940
+   503464    24%   2.67    16.2    1.9      40.9    819
+   671488    32%   2.53    15.4    2.4      43.6    769
+   839352    34%   2.48    15.1    2.2      44.7    749
+  1007416    35%   2.47    15.1    2.3      45.7    739
+
+r140  (3 seeds, 4335 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167512    14%   2.81    17.0    1.7      36.6    897
+   335120    25%   2.68    16.2    2.0      41.6    804
+   503352    38%   2.45    15.0    2.8      49.7    678
+   671472    43%   2.35    14.4    3.3      52.7    638
+   839016    39%   2.41    14.8    3.1      50.9    656
+  1007240    39%   2.40    14.7    3.3      50.6    662
+
+r220  (3 seeds, 4696 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167808    12%   2.83    17.1    4.2      35.1    939
+   335592    23%   2.67    16.2    5.7      40.0    838
+   503416    30%   2.56    15.6    7.0      44.2    756
+   671328    29%   2.57    15.6    7.2      44.4    758
+   839304    34%   2.49    15.1    8.9      47.3    709
+  1007408    36%   2.43    14.8    9.1      48.3    696
+
+r340  (3 seeds, 4848 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167832    11%   2.84    17.1    5.6      34.1    965
+   335744    23%   2.66    16.1    9.3      40.3    834
+   503608    26%   2.59    15.7    9.9      41.2    811
+   671288    32%   2.51    15.2   12.7      45.7    735
+   839360    28%   2.55    15.5   11.0      43.1    777
+  1007368    33%   2.49    15.2   12.9      46.3    726
+
+r500  (3 seeds, 5045 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167840    11%   2.84    17.1    5.0      34.1    971
+   335656    17%   2.74    16.6    7.1      36.4    914
+   503616    24%   2.65    16.0    8.8      41.1    813
+   671112    27%   2.60    15.7    9.7      42.5    798
+   838864    26%   2.57    15.6   10.7      41.6    801
+  1007400    31%   2.51    15.2   11.6      45.1    748
+
+r1200  (3 seeds, 5523 episodes)
+-------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167888     9%   2.88    17.3    4.6      31.7   1040
+   335760    14%   2.79    16.8    7.1      34.3    979
+   503672    16%   2.74    16.5    7.3      34.9    956
+   671584    20%   2.69    16.3    8.0      37.4    907
+   839376    23%   2.61    15.9   10.0      39.7    837
+  1007376    27%   2.57    15.7   10.6      41.8    804
+
+fog_off  (3 seeds, 5103 episodes)
+---------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167848     8%   2.88    17.3   30.7      30.7   1077
+   335664    18%   2.71    16.4   36.8      36.8    910
+   503512    20%   2.66    16.1   37.9      37.9    885
+   670944    28%   2.59    15.8   43.7      43.7    762
+   838960    29%   2.54    15.4   44.4      44.4    762
+  1007384    33%   2.50    15.3   47.6      47.6    707
+
+
+==============================================================================
+6b. LEARNING CURVES - runner, episodes binned by timestep
+==============================================================================
+
+Own-role win rate during training (the opponent is the heuristic; these are
+training episodes, not evaluation rounds, so they run hotter than the tables
+above). Seeds pooled per bin.
+
+r080  (3 seeds, 3972 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167688     0%   0.00     0.1    0.4      27.5   1184
+   335600     0%   0.00     0.0    0.2      54.1    624
+   503664     0%   0.00     0.0    0.2      60.3    556
+   671712     0%   0.00     0.0    0.2      63.2    532
+   839544     0%   0.00     0.0    0.2      63.1    527
+  1007608     0%   0.00     0.0    0.2      62.1    549
+
+r140  (3 seeds, 7226 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167832     0%   0.00     0.0    0.8      17.9   1844
+   335536     0%   0.00     0.0    0.8      24.9   1336
+   503512     0%   0.00     0.0    0.7      29.2   1155
+   671312     0%   0.00     0.1    0.7      30.8   1088
+   838968     0%   0.00     0.1    0.6      36.3    919
+  1007184     0%   0.00     0.0    0.6      38.2    884
+
+r220  (3 seeds, 9631 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167728     0%   0.00     0.0    1.1      13.7   2411
+   335800     0%   0.00     0.0    1.1      19.5   1715
+   503680     0%   0.00     0.1    1.0      22.0   1513
+   671520     0%   0.00     0.1    1.1      21.8   1535
+   839504     0%   0.00     0.1    1.1      26.3   1275
+  1007456     0%   0.01     0.3    1.3      28.5   1182
+
+r340  (3 seeds, 9396 episodes)
+------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167736     0%   0.00     0.0    1.5      13.5   2415
+   335576     0%   0.00     0.0    1.5      20.5   1637
+   503464     0%   0.00     0.0    1.3      24.9   1356
+   671336     0%   0.00     0.0    1.5      23.6   1406
+   839312     0%   0.00     0.0    1.4      26.0   1309
+  1007176     0%   0.00     0.1    1.3      26.2   1273
+
+r500  (3 seeds, 11127 episodes)
+-------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167744     0%   0.00     0.0    1.6      11.4   2913
+   335704     0%   0.00     0.1    1.7      17.1   1942
+   503720     0%   0.00     0.1    2.0      19.7   1700
+   671560     0%   0.00     0.1    1.8      21.6   1566
+   839400     0%   0.00     0.1    2.3      21.5   1561
+  1007456     0%   0.01     0.2    2.0      23.2   1445
+
+r1200  (3 seeds, 12486 episodes)
+--------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167776     0%   0.00     0.0    1.7      11.0   3020
+   335704     0%   0.00     0.1    1.8      14.6   2297
+   503536     0%   0.01     0.2    2.1      16.1   2066
+   671592     0%   0.01     0.4    2.3      18.4   1833
+   839504     0%   0.04     0.6    2.9      20.3   1657
+  1007488     0%   0.07     1.0    2.7      20.8   1613
+
+fog_off  (3 seeds, 28241 episodes)
+----------------------------------
+    steps    win   gens  repair   seen  survived    eps
+   167848     0%   0.00     0.0    5.0       5.0   6734
+   335856     0%   0.00     0.2    5.4       5.4   6233
+   503752     0%   0.04     1.0    6.1       6.1   5492
+   671696     0%   0.13     1.7    8.1       8.1   4102
+   839648     0%   0.17     1.9   11.1      11.1   3020
+  1007600     0%   0.20     2.2   12.6      12.6   2660
+
+
+==============================================================================
+7a. CONVERGENCE CHECK - tagger
+==============================================================================
+
+Win rate over the last 30% of training, and the fitted slope in percentage points
+per 100k steps. A slope still clearly above zero at 1M steps means this arm was
+not done learning and its ranking here is provisional.
+
+arm        first 10%  last 10%  slope pp/100k  still rising?
+------------------------------------------------------------
+r080              5%       34%          -1.05           flat
+r140             12%       39%          -0.26           flat
+r220              9%       35%          +1.22            yes
+r340              9%       31%          +2.53            yes
+r500              9%       31%          +0.93            yes
+r1200             9%       28%          +1.45            yes
+fog_off           6%       35%          +2.97            yes
+
+
+==============================================================================
+7b. CONVERGENCE CHECK - runner
+==============================================================================
+
+Win rate over the last 30% of training, and the fitted slope in percentage points
+per 100k steps. A slope still clearly above zero at 1M steps means this arm was
+not done learning and its ranking here is provisional.
+
+arm        first 10%  last 10%  slope pp/100k  still rising?
+------------------------------------------------------------
+r080              0%        0%          +0.00           flat
+r140              0%        0%          +0.00           flat
+r220              0%        0%          +0.00           flat
+r340              0%        0%          +0.00           flat
+r500              0%        0%          +0.00           flat
+r1200             0%        0%          +0.00           flat
+fog_off           0%        0%          +0.00           flat

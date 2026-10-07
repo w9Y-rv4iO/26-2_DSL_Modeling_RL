@@ -1,0 +1,634 @@
+{
+ "trajectory": {
+  "arm": "ppo",
+  "seed": 0,
+  "budget": 30,
+  "evaluations": 30,
+  "best_error": 0.08333333333333331,
+  "best_win_rate": 0.4166666666666667,
+  "best_key": "ea79fb072b52c1babc2abddc747798b905064716",
+  "best_spec": {
+   "Main": [
+    "###############E#########",
+    "#.....#.......#.M......M#",
+    "#.....#..###.R#..####...#",
+    "#..#..#..#.......#......#",
+    "#..#.....#..##T###..#...#",
+    "#..####..#.....#....#...#",
+    "#.....#..####.#..####...#",
+    "#..#..#.......#.........#",
+    "#..#..####....#..###..###",
+    "#..#.....#..###....#....#",
+    "#..####..#.....##..###..#",
+    "#........###...#........#",
+    "#..###.....#...#..###...#",
+    "#M...#.....#......#.....#",
+    "#########################"
+   ]
+  },
+  "start": "Corridors",
+  "curve": [
+   [
+    1,
+    0.4583333333333333
+   ],
+   [
+    2,
+    0.25
+   ],
+   [
+    3,
+    0.25
+   ],
+   [
+    4,
+    0.25
+   ],
+   [
+    5,
+    0.25
+   ],
+   [
+    6,
+    0.125
+   ],
+   [
+    7,
+    0.125
+   ],
+   [
+    8,
+    0.125
+   ],
+   [
+    9,
+    0.125
+   ],
+   [
+    10,
+    0.125
+   ],
+   [
+    11,
+    0.125
+   ],
+   [
+    12,
+    0.08333333333333337
+   ],
+   [
+    13,
+    0.08333333333333337
+   ],
+   [
+    14,
+    0.08333333333333337
+   ],
+   [
+    15,
+    0.08333333333333337
+   ],
+   [
+    16,
+    0.08333333333333337
+   ],
+   [
+    17,
+    0.08333333333333337
+   ],
+   [
+    18,
+    0.08333333333333337
+   ],
+   [
+    19,
+    0.08333333333333337
+   ],
+   [
+    20,
+    0.08333333333333337
+   ],
+   [
+    21,
+    0.08333333333333337
+   ],
+   [
+    22,
+    0.08333333333333337
+   ],
+   [
+    23,
+    0.08333333333333337
+   ],
+   [
+    24,
+    0.08333333333333337
+   ],
+   [
+    25,
+    0.08333333333333331
+   ],
+   [
+    26,
+    0.08333333333333331
+   ],
+   [
+    27,
+    0.08333333333333331
+   ],
+   [
+    28,
+    0.08333333333333331
+   ],
+   [
+    29,
+    0.08333333333333331
+   ],
+   [
+    30,
+    0.08333333333333331
+   ]
+  ],
+  "records": [
+   {
+    "eval": 1,
+    "label": "random",
+    "key": "2dd6f3ec02300b04737e70bc82f66d1569424518",
+    "balance_error": 0.4583333333333333,
+    "runner_win_rate": 0.041666666666666664,
+    "escape_rate": 0.041666666666666664,
+    "tag_rate": 0.9583333333333334,
+    "timeout_rate": 0.0,
+    "avg_steps": 220.25,
+    "edits": 21,
+    "attempts": 40,
+    "steps": 75
+   },
+   {
+    "eval": 2,
+    "label": "Twins",
+    "key": "2a275541c117e02d7a23fcd0442b0bd1cc4948c7",
+    "balance_error": 0.25,
+    "runner_win_rate": 0.25,
+    "escape_rate": 0.25,
+    "tag_rate": 0.75,
+    "timeout_rate": 0.0,
+    "avg_steps": 236.375,
+    "edits": 17,
+    "attempts": 40,
+    "steps": 78
+   },
+   {
+    "eval": 3,
+    "label": "blank",
+    "key": "a38469dd8e6128b6b1cbc18f745eb90a81a4278d",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 0.20833333333333334,
+    "timeout_rate": 0.7916666666666666,
+    "avg_steps": 787.7083333333334,
+    "edits": 12,
+    "attempts": 40,
+    "steps": 84
+   },
+   {
+    "eval": 4,
+    "label": "Arena",
+    "key": "e1b8659e64ce2a9028c647e046a8b81a6b6cfaea",
+    "balance_error": 0.4166666666666667,
+    "runner_win_rate": 0.08333333333333333,
+    "escape_rate": 0.08333333333333333,
+    "tag_rate": 0.6666666666666666,
+    "timeout_rate": 0.25,
+    "avg_steps": 382.0833333333333,
+    "edits": 19,
+    "attempts": 40,
+    "steps": 87
+   },
+   {
+    "eval": 5,
+    "label": "Arena",
+    "key": "6753dcfe1825a8e6b3939d68d57eb7539a5612e9",
+    "balance_error": 0.33333333333333337,
+    "runner_win_rate": 0.16666666666666666,
+    "escape_rate": 0.16666666666666666,
+    "tag_rate": 0.7083333333333334,
+    "timeout_rate": 0.125,
+    "avg_steps": 295.0,
+    "edits": 18,
+    "attempts": 40,
+    "steps": 94
+   },
+   {
+    "eval": 6,
+    "label": "Mansion",
+    "key": "dffc6371abc0ef750e82abb239c5772fb41300ef",
+    "balance_error": 0.125,
+    "runner_win_rate": 0.625,
+    "escape_rate": 0.625,
+    "tag_rate": 0.2916666666666667,
+    "timeout_rate": 0.08333333333333333,
+    "avg_steps": 289.0416666666667,
+    "edits": 19,
+    "attempts": 40,
+    "steps": 100
+   },
+   {
+    "eval": 7,
+    "label": "random",
+    "key": "41cef80fed4b822468d85575363dfb353c113e57",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 83.91666666666667,
+    "edits": 16,
+    "attempts": 40,
+    "steps": 79
+   },
+   {
+    "eval": 8,
+    "label": "Corridors",
+    "key": "e8a9121129cc60f2b1ba5679ac84d9640948fe21",
+    "balance_error": 0.29166666666666663,
+    "runner_win_rate": 0.20833333333333334,
+    "escape_rate": 0.20833333333333334,
+    "tag_rate": 0.4583333333333333,
+    "timeout_rate": 0.3333333333333333,
+    "avg_steps": 431.1666666666667,
+    "edits": 19,
+    "attempts": 40,
+    "steps": 95
+   },
+   {
+    "eval": 9,
+    "label": "Corridors",
+    "key": "72fd7819fc3866bf14d48c8a97e25a2a24f85a1c",
+    "balance_error": 0.125,
+    "runner_win_rate": 0.625,
+    "escape_rate": 0.625,
+    "tag_rate": 0.2916666666666667,
+    "timeout_rate": 0.08333333333333333,
+    "avg_steps": 230.33333333333334,
+    "edits": 17,
+    "attempts": 40,
+    "steps": 80
+   },
+   {
+    "eval": 10,
+    "label": "Corridors",
+    "key": "dc7fcbeaceb212d6ef48742726d2cef84664a270",
+    "balance_error": 0.16666666666666669,
+    "runner_win_rate": 0.3333333333333333,
+    "escape_rate": 0.3333333333333333,
+    "tag_rate": 0.6666666666666666,
+    "timeout_rate": 0.0,
+    "avg_steps": 204.75,
+    "edits": 15,
+    "attempts": 40,
+    "steps": 105
+   },
+   {
+    "eval": 11,
+    "label": "Twins",
+    "key": "f7611e085014da8410dd7586988b22a2ff2f8461",
+    "balance_error": 0.16666666666666669,
+    "runner_win_rate": 0.3333333333333333,
+    "escape_rate": 0.3333333333333333,
+    "tag_rate": 0.6666666666666666,
+    "timeout_rate": 0.0,
+    "avg_steps": 253.5,
+    "edits": 11,
+    "attempts": 40,
+    "steps": 104
+   },
+   {
+    "eval": 12,
+    "label": "Mansion",
+    "key": "d944ce33f84f9ef354cda7fecd0f076e95adb4f6",
+    "balance_error": 0.08333333333333337,
+    "runner_win_rate": 0.5833333333333334,
+    "escape_rate": 0.5833333333333334,
+    "tag_rate": 0.3333333333333333,
+    "timeout_rate": 0.08333333333333333,
+    "avg_steps": 351.4166666666667,
+    "edits": 15,
+    "attempts": 40,
+    "steps": 95
+   },
+   {
+    "eval": 13,
+    "label": "random",
+    "key": "1a06896ebdebc91879ef6c82581a08e4e532cfff",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 98.04166666666667,
+    "edits": 11,
+    "attempts": 40,
+    "steps": 74
+   },
+   {
+    "eval": 14,
+    "label": "Pillars",
+    "key": "ef8cd0550d15a2e907008c67ddf269685f4192b2",
+    "balance_error": 0.08333333333333337,
+    "runner_win_rate": 0.5833333333333334,
+    "escape_rate": 0.5833333333333334,
+    "tag_rate": 0.0,
+    "timeout_rate": 0.4166666666666667,
+    "avg_steps": 517.1666666666666,
+    "edits": 16,
+    "attempts": 40,
+    "steps": 88
+   },
+   {
+    "eval": 15,
+    "label": "random",
+    "key": "3ef76e7bde6848c040ab84294d6bc75037477046",
+    "balance_error": 0.4583333333333333,
+    "runner_win_rate": 0.041666666666666664,
+    "escape_rate": 0.041666666666666664,
+    "tag_rate": 0.625,
+    "timeout_rate": 0.3333333333333333,
+    "avg_steps": 352.875,
+    "edits": 14,
+    "attempts": 40,
+    "steps": 92
+   },
+   {
+    "eval": 16,
+    "label": "blank",
+    "key": "d0b3b0bc3074e770cc6bcf1d73e8e114f8f5ddc6",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 0.3333333333333333,
+    "timeout_rate": 0.6666666666666666,
+    "avg_steps": 677.375,
+    "edits": 15,
+    "attempts": 40,
+    "steps": 75
+   },
+   {
+    "eval": 17,
+    "label": "Lv2",
+    "key": "9abc1ce7e88d3ae1c150002a44cfae086dca32ab",
+    "balance_error": 0.33333333333333337,
+    "runner_win_rate": 0.16666666666666666,
+    "escape_rate": 0.16666666666666666,
+    "tag_rate": 0.16666666666666666,
+    "timeout_rate": 0.6666666666666666,
+    "avg_steps": 721.625,
+    "edits": 13,
+    "attempts": 40,
+    "steps": 83
+   },
+   {
+    "eval": 18,
+    "label": "Pillars",
+    "key": "19ad7c629c3d33c38d880cc64c32b156d007302e",
+    "balance_error": 0.375,
+    "runner_win_rate": 0.125,
+    "escape_rate": 0.125,
+    "tag_rate": 0.125,
+    "timeout_rate": 0.75,
+    "avg_steps": 754.875,
+    "edits": 17,
+    "attempts": 40,
+    "steps": 94
+   },
+   {
+    "eval": 19,
+    "label": "random",
+    "key": "de715145c2e4be0aa96227a3d39de3ecb1d201fc",
+    "balance_error": 0.4583333333333333,
+    "runner_win_rate": 0.041666666666666664,
+    "escape_rate": 0.041666666666666664,
+    "tag_rate": 0.9166666666666666,
+    "timeout_rate": 0.041666666666666664,
+    "avg_steps": 278.6666666666667,
+    "edits": 18,
+    "attempts": 40,
+    "steps": 95
+   },
+   {
+    "eval": 20,
+    "label": "Lv1",
+    "key": "02417f9e2abb73e08e9ed1110293ffd628f711ba",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 565.8333333333334,
+    "edits": 10,
+    "attempts": 40,
+    "steps": 106
+   },
+   {
+    "eval": 21,
+    "label": "Foundry",
+    "key": "56eba6cc234ed2987bdd172bafae22c0ab3244d7",
+    "balance_error": 0.16666666666666663,
+    "runner_win_rate": 0.6666666666666666,
+    "escape_rate": 0.6666666666666666,
+    "tag_rate": 0.16666666666666666,
+    "timeout_rate": 0.16666666666666666,
+    "avg_steps": 492.875,
+    "edits": 13,
+    "attempts": 40,
+    "steps": 82
+   },
+   {
+    "eval": 22,
+    "label": "Lv1",
+    "key": "4a3b258b14cf584193e75e41ca1b5aa275a44184",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 584.125,
+    "edits": 14,
+    "attempts": 40,
+    "steps": 100
+   },
+   {
+    "eval": 23,
+    "label": "Corridors",
+    "key": "dedc64c4c6c5f77faecc65f073e8318c3acf1897",
+    "balance_error": 0.4583333333333333,
+    "runner_win_rate": 0.041666666666666664,
+    "escape_rate": 0.041666666666666664,
+    "tag_rate": 0.5416666666666666,
+    "timeout_rate": 0.4166666666666667,
+    "avg_steps": 473.5833333333333,
+    "edits": 15,
+    "attempts": 40,
+    "steps": 100
+   },
+   {
+    "eval": 24,
+    "label": "random",
+    "key": "7bb3449ad9fac9c66099d0540c6a5397a7192e8c",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 85.33333333333333,
+    "edits": 12,
+    "attempts": 40,
+    "steps": 97
+   },
+   {
+    "eval": 25,
+    "label": "Corridors",
+    "key": "ea79fb072b52c1babc2abddc747798b905064716",
+    "balance_error": 0.08333333333333331,
+    "runner_win_rate": 0.4166666666666667,
+    "escape_rate": 0.4166666666666667,
+    "tag_rate": 0.5833333333333334,
+    "timeout_rate": 0.0,
+    "avg_steps": 153.75,
+    "edits": 13,
+    "attempts": 40,
+    "steps": 84
+   },
+   {
+    "eval": 26,
+    "label": "random",
+    "key": "261cbd58c8fbaeb24248edbca81e38247fd02427",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 154.45833333333334,
+    "edits": 22,
+    "attempts": 40,
+    "steps": 98
+   },
+   {
+    "eval": 27,
+    "label": "Lv2",
+    "key": "8fda9bfeb16298bbcc0ef455765dd567ac4b3050",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 0.5833333333333334,
+    "timeout_rate": 0.4166666666666667,
+    "avg_steps": 579.5,
+    "edits": 23,
+    "attempts": 40,
+    "steps": 105
+   },
+   {
+    "eval": 28,
+    "label": "Lv1",
+    "key": "9cdae49ba35ac191ecfc1d62e0bc85f58c2bf752",
+    "balance_error": 0.5,
+    "runner_win_rate": 0.0,
+    "escape_rate": 0.0,
+    "tag_rate": 1.0,
+    "timeout_rate": 0.0,
+    "avg_steps": 543.9166666666666,
+    "edits": 13,
+    "attempts": 40,
+    "steps": 109
+   },
+   {
+    "eval": 29,
+    "label": "Twins",
+    "key": "b758824e6dd0324bd6faa51f16b2ec16c0f3c2b5",
+    "balance_error": 0.25,
+    "runner_win_rate": 0.25,
+    "escape_rate": 0.25,
+    "tag_rate": 0.75,
+    "timeout_rate": 0.0,
+    "avg_steps": 248.375,
+    "edits": 10,
+    "attempts": 40,
+    "steps": 111
+   },
+   {
+    "eval": 30,
+    "label": "Lv2",
+    "key": "cea54b652e8deae7395411263c568f16d95286fa",
+    "balance_error": 0.4583333333333333,
+    "runner_win_rate": 0.041666666666666664,
+    "escape_rate": 0.041666666666666664,
+    "tag_rate": 0.3333333333333333,
+    "timeout_rate": 0.625,
+    "avg_steps": 633.625,
+    "edits": 14,
+    "attempts": 40,
+    "steps": 126
+   }
+  ],
+  "elapsed_s": 577.9,
+  "episodes": 24,
+  "round_time": 60.0,
+  "seed0": 0,
+  "note": "PPO, 6 SubprocVecEnv workers, edit_budget=40, start_pool=['blank', 'random', 'random', 'Arena', 'Corridors', 'Pillars', 'Mansion', 'Lv1', 'Lv2', 'Twins', 'Foundry']"
+ },
+ "ppo_kwargs": {
+  "policy": "MlpPolicy",
+  "n_steps": "128",
+  "batch_size": "256",
+  "n_epochs": "10",
+  "learning_rate": "0.0003",
+  "gamma": "0.99",
+  "gae_lambda": "0.95",
+  "clip_range": "0.2",
+  "ent_coef": "0.01",
+  "vf_coef": "0.5",
+  "policy_kwargs": "{'net_arch': [256, 256]}"
+ },
+ "model": "mapstudy/results/ppo_seed0.zip",
+ "surrogate": {
+  "model": "ridge",
+  "target": "runner_win_rate",
+  "alpha": 100.0,
+  "split_alpha": 1.0,
+  "n": 150,
+  "n_train": 112,
+  "n_held_out": 38,
+  "seed": 7,
+  "train_r2": 0.6671009914234101,
+  "split_r2": -0.19157908480315267,
+  "held_out_r2": 0.23471127886148224,
+  "held_out_r2_kind": "5-fold out-of-fold over all n",
+  "comparison": {
+   "ridge": {
+    "train_r2": 0.6671009914234101,
+    "split_r2": -0.19157908480315267,
+    "held_out_r2": 0.23471127886148224
+   },
+   "knn(k=5)": {
+    "train_r2": 0.78270245941167,
+    "split_r2": 0.06219931979800064,
+    "held_out_r2": 0.34798365298408707
+   },
+   "gbm(d2,200)": {
+    "train_r2": 0.9374520953651414,
+    "split_r2": 0.2699266674727785,
+    "held_out_r2": 0.4923008189132184
+   }
+  },
+  "dataset_protocol": {
+   "episodes": 24,
+   "round_time": 60.0,
+   "seed0": 0,
+   "rules": "RULES_V2 (fractional)",
+   "items_enabled": false,
+   "skills_enabled": false
+  },
+  "reduced": 150
+ }
+}

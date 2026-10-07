@@ -1,0 +1,8 @@
+{
+  "_note": "Control arm: train from scratch on the final map. steps = lv1+lv2+lv3 total exactly (393216+589824+1015808 = 1998848), so both arms see the same number of env steps.",
+  "map": "Lv3",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 1998848,
+  "items": false
+}

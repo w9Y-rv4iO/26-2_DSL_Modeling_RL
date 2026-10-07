@@ -1,0 +1,14 @@
+{
+  "_note": "v2 curriculum stage 3/3: the final map with interior obstacles. Run with --init <lv2 run>/model.zip.",
+  "map": "Lv3",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 1015808,
+  "items": false,
+  "reward": "crossplay",
+  "required_generators": 3,
+  "active_exits": 3,
+  "random_spawns": true,
+  "late_exits": true,
+  "random_generators": false
+}

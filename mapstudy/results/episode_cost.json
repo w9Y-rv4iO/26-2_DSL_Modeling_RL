@@ -1,0 +1,32 @@
+{
+ "map": "blank 25x15",
+ "floor_tiles": 302,
+ "metric_keys": 15,
+ "components_ms": {
+  "metrics_cold": 30.677207299595466,
+  "sight_mean": 15.690987899870379,
+  "distance_stats": 7.420747099968139,
+  "cheap_block": 4.527596359985182
+ },
+ "episode_ms_before": 512.9947749199346,
+ "episode_ms_after": 95.45799676008755,
+ "episode_ms_after_cold_memo": 85.05977399996482,
+ "episode_ms_after_no_memo": 135.02870944008464,
+ "speedup": 5.374036668810816,
+ "speedup_cold_memo": 6.030991510983168,
+ "speedup_stride_only": 3.7991533581794488,
+ "blank_ms_before": 403.95437580009457,
+ "blank_ms_after": 83.26568624004722,
+ "blank_speedup": 4.8513906993516125,
+ "blank_mean_edits": 16.28,
+ "mean_edits": 15.32,
+ "mean_steps": 88.76,
+ "repeats": 25,
+ "first_build_direct_ms": {
+  "blank_before": 784.0,
+  "blank_after": 67.2,
+  "speedup": 11.666666666666666,
+  "how": "measured against the pre-change env.py before the rewrite; not reproducible from this tree"
+ },
+ "note": "surrogate reward mode, DEFAULT_START_POOL, random actions. 'before' = exact metric block on every map change and no wall-signature memo, which is what the first build did. 'after_no_memo' isolates the stride alone; 'after_cold_memo' is the first 25 episodes of a fresh worker. Timings are sensitive to machine load \u2014 this machine had another study's 4-worker job on it."
+}

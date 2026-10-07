@@ -1,0 +1,28 @@
+{
+  "_note": "Seed-assignment record (historical): which member ran which arm on which seeds. ONE member trained directly on the final map (Lv3); the other FOUR trained level by level (Lv1 -> Lv2 -> Lv3). Arms were fixed per member and only the seeds varied, run in the order listed; the first seed of each block was required. analyze.py reads this file for its seed-status table and adapts to whatever seeds are present; tests/test_smoke.py checks the split and the seed allocation stay valid.",
+
+  "design": "unpaired, 4 curriculum runs per round vs 1 direct run per round",
+
+  "why_multiple_seeds": "With one round each the arms are 4-vs-1: the control arm's run-to-run spread is unmeasurable and the run-level permutation test has only C(5,1)=5 label assignments, so its smallest possible p is 0.2 — the design cannot reach p<0.05 no matter what the data say. A SECOND round each makes it 8-vs-2 and the floor drops to 1/C(10,8) = 0.022. That one extra round is the highest-value compute in the whole experiment, and the single highest-value run in it is the direct member's second: until it exists, nothing can estimate how much of the control arm's score is seed luck.",
+
+  "seed_allocation": "Base seeds 1..5 go to member1..member5 in order. Each extra round adds +10 to the member's base seed, so member i owns the block {i, i+10, i+20, ...} and no two members can ever collide. Seed 0 is deliberately unassigned: it is train.py's default, so a results file named *_seed0.json means somebody dropped their --seed, and analyze.py will flag it as unclaimed rather than silently folding it into an arm.",
+
+  "arms": {
+    "curriculum": "configs/lv1.json -> configs/lv2.json -> configs/lv3.json (weight transfer via --init)",
+    "direct": "configs/lv3_direct.json (from scratch on the final map, same total env steps)"
+  },
+
+  "members": [
+    {"member": "member1", "arm": "curriculum", "seeds": [1, 11, 21], "run": "scripts/run_curriculum.sh <seed>"},
+    {"member": "member2", "arm": "direct",     "seeds": [2, 12, 22], "run": "scripts/run_direct.sh <seed>"},
+    {"member": "member3", "arm": "curriculum", "seeds": [3, 13, 23], "run": "scripts/run_curriculum.sh <seed>"},
+    {"member": "member4", "arm": "curriculum", "seeds": [4, 14, 24], "run": "scripts/run_curriculum.sh <seed>"},
+    {"member": "member5", "arm": "curriculum", "seeds": [5, 15, 25], "run": "scripts/run_curriculum.sh <seed>"}
+  ],
+
+  "required_rounds": 1,
+
+  "matched_pairs_are_optional_here": "Because every member owns a private seed block, no seed appears in both arms, so the planned runs produce no matched pairs and analyze.py's paired test stays off. That costs almost nothing: the paired sign-flip test's floor is 2/2^k (0.5 at two pairs, 0.25 at three), i.e. far weaker than the unpaired test it would sit next to. If wanted, one spare run of the OTHER arm on a seed the first arm already used creates a pair, and the paired test switches itself on at two.",
+
+  "if_you_run_out_of_listed_seeds": "Further runs continue with +10 in a member's block (35, 45, ...). Any seed not in this file is accepted by the scripts as a spare run; they only refuse to overwrite an existing result file (FORCE=1 overrides that)."
+}

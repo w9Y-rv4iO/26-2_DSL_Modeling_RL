@@ -1,0 +1,7087 @@
+{
+ "budget_evaluations": 30,
+ "budget_kind": "REAL map evaluations (refinement only); surrogate calls are free and not counted",
+ "surrogate_episodes_per_round": 1200,
+ "seeds": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "elapsed_s": 5319.6,
+ "runs": [
+  {
+   "arm": "ppo_surrogate",
+   "seed": 0,
+   "budget": 30,
+   "evaluations": 30,
+   "best_error": 0.08333333333333331,
+   "best_win_rate": 0.4166666666666667,
+   "best_key": "91cd783439b7fe1321ea22ae73ee22ed05f44852",
+   "best_spec": {
+    "East": [
+     "#########################",
+     "#1...##.........##.....2#",
+     "#...M##.........##......#",
+     "#..##..##..##..#..#..#..#",
+     "#..##..##..##..#..#..#..#",
+     "#........##........##...#",
+     "#........##........##...E",
+     "#..##..##..##..#..#..#..#",
+     "#..##..##..##..#..#..#..#",
+     "#..........T............#",
+     "#.......................#",
+     "#..##..##..##..#..#..#..#",
+     "#....##.M.......##......#",
+     "#3MR.##.........##.....4#",
+     "##E######################"
+    ],
+    "West": [
+     "#########################",
+     "#2.....##.........##...1#",
+     "#......##.........##....#",
+     "#..#..#M.#..##..##M.##..#",
+     "#..#..#..#..##..##..##..#",
+     "#...##........##........#",
+     "E...##........##........#",
+     "#..#..#..#..##..##..##..#",
+     "#..#..#..#..##..##..##..#",
+     "#.......................#",
+     "#.......................#",
+     "#..#..#..#..##..##..##..#",
+     "#......##.........##....#",
+     "#4....M##.........##...3#",
+     "############E############"
+    ]
+   },
+   "start": "Twins",
+   "curve": [
+    [
+     1,
+     0.25
+    ],
+    [
+     2,
+     0.16666666666666669
+    ],
+    [
+     3,
+     0.16666666666666669
+    ],
+    [
+     4,
+     0.08333333333333337
+    ],
+    [
+     5,
+     0.08333333333333331
+    ],
+    [
+     6,
+     0.08333333333333331
+    ],
+    [
+     7,
+     0.08333333333333331
+    ],
+    [
+     8,
+     0.08333333333333331
+    ],
+    [
+     9,
+     0.08333333333333331
+    ],
+    [
+     10,
+     0.08333333333333331
+    ],
+    [
+     11,
+     0.08333333333333331
+    ],
+    [
+     12,
+     0.08333333333333331
+    ],
+    [
+     13,
+     0.08333333333333331
+    ],
+    [
+     14,
+     0.08333333333333331
+    ],
+    [
+     15,
+     0.08333333333333331
+    ],
+    [
+     16,
+     0.08333333333333331
+    ],
+    [
+     17,
+     0.08333333333333331
+    ],
+    [
+     18,
+     0.08333333333333331
+    ],
+    [
+     19,
+     0.08333333333333331
+    ],
+    [
+     20,
+     0.08333333333333331
+    ],
+    [
+     21,
+     0.08333333333333331
+    ],
+    [
+     22,
+     0.08333333333333331
+    ],
+    [
+     23,
+     0.08333333333333331
+    ],
+    [
+     24,
+     0.08333333333333331
+    ],
+    [
+     25,
+     0.08333333333333331
+    ],
+    [
+     26,
+     0.08333333333333331
+    ],
+    [
+     27,
+     0.08333333333333331
+    ],
+    [
+     28,
+     0.08333333333333331
+    ],
+    [
+     29,
+     0.08333333333333331
+    ],
+    [
+     30,
+     0.08333333333333331
+    ]
+   ],
+   "records": [
+    {
+     "eval": 1,
+     "round": 1,
+     "label": "Arena",
+     "key": "2dbdaf3f36acb189ad65c2f5e9f55b81fd610ec2",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.25,
+     "escape_rate": 0.25,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.125,
+     "avg_steps": 280.8333333333333,
+     "predicted_error": 0.04209203251559934,
+     "predicted_win_rate": 0.5420920325155993,
+     "gap": 0.20790796748440066,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 2,
+     "round": 1,
+     "label": "Arena",
+     "key": "62633c9856dcc8fa40dcafd552dc6778b192fd72",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 327.375,
+     "predicted_error": 0.06366306977642544,
+     "predicted_win_rate": 0.5636630697764254,
+     "gap": 0.10300359689024124,
+     "edits": 8,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 3,
+     "round": 1,
+     "label": "Foundry",
+     "key": "f822016d589bb29a0ebcd87a0b644bd11250af97",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 444.0,
+     "predicted_error": 0.06692994619122994,
+     "predicted_win_rate": 0.5669299461912299,
+     "gap": 0.18307005380877006,
+     "edits": 13,
+     "attempts": 15,
+     "deterministic": false
+    },
+    {
+     "eval": 4,
+     "round": 1,
+     "label": "Mansion",
+     "key": "4340474702f806ed3b821a312535998e6a17622f",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 355.375,
+     "predicted_error": 0.09404358739071916,
+     "predicted_win_rate": 0.5940435873907192,
+     "gap": -0.010710254057385793,
+     "edits": 9,
+     "attempts": 21,
+     "deterministic": false
+    },
+    {
+     "eval": 5,
+     "round": 1,
+     "label": "Twins",
+     "key": "91cd783439b7fe1321ea22ae73ee22ed05f44852",
+     "balance_error": 0.08333333333333331,
+     "runner_win_rate": 0.4166666666666667,
+     "escape_rate": 0.4166666666666667,
+     "tag_rate": 0.5833333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 236.83333333333334,
+     "predicted_error": 0.09929493612388396,
+     "predicted_win_rate": 0.40070506387611604,
+     "gap": -0.015961602790550644,
+     "edits": 8,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 6,
+     "round": 1,
+     "label": "Mansion",
+     "key": "437de87eb2608d862cb933d16ffc47a115b38eb2",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.2916666666666667,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 337.4166666666667,
+     "predicted_error": 0.11212049364693844,
+     "predicted_win_rate": 0.6121204936469384,
+     "gap": 0.054546173019728195,
+     "edits": 15,
+     "attempts": 39,
+     "deterministic": false
+    },
+    {
+     "eval": 7,
+     "round": 1,
+     "label": "Mansion",
+     "key": "ed76de524b86544520ad7e243a8013d375441c82",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.7916666666666666,
+     "escape_rate": 0.7916666666666666,
+     "tag_rate": 0.08333333333333333,
+     "timeout_rate": 0.125,
+     "avg_steps": 328.75,
+     "predicted_error": 0.11280283361108923,
+     "predicted_win_rate": 0.6128028336110892,
+     "gap": 0.1788638330555774,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 8,
+     "round": 1,
+     "label": "Corridors",
+     "key": "5316737feda218b2bdd7dfa20fd563bbce5c7abf",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.25,
+     "escape_rate": 0.25,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.5,
+     "avg_steps": 510.375,
+     "predicted_error": 0.11382794883509573,
+     "predicted_win_rate": 0.3861720511649043,
+     "gap": 0.13617205116490427,
+     "edits": 4,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 9,
+     "round": 1,
+     "label": "Mansion",
+     "key": "c8cabcda534d3d03847554571281d4f2fa69e54c",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.25,
+     "avg_steps": 387.8333333333333,
+     "predicted_error": 0.11481306206119812,
+     "predicted_win_rate": 0.6148130620611981,
+     "gap": -0.03147972872786475,
+     "edits": 1,
+     "attempts": 1,
+     "deterministic": true
+    },
+    {
+     "eval": 10,
+     "round": 1,
+     "label": "Mansion",
+     "key": "d1523fddbea3668875f4329a7c3baccfee95b762",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 344.7916666666667,
+     "predicted_error": 0.11481306206119812,
+     "predicted_win_rate": 0.6148130620611981,
+     "gap": 0.13518693793880188,
+     "edits": 11,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 11,
+     "round": 2,
+     "label": "Twins",
+     "key": "54205c7cd1375dba14f2bddb3b8955021e5cba8a",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.6666666666666666,
+     "timeout_rate": 0.0,
+     "avg_steps": 234.54166666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.10266756125103399,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 12,
+     "round": 2,
+     "label": "Twins",
+     "key": "a3847df2fa7bf228d18679b423eab1c4ba164755",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 220.66666666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.14433422791770062,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 13,
+     "round": 2,
+     "label": "Twins",
+     "key": "33b2b5ebb1adb71c1ccd2e2a5214000e8d20532e",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 220.66666666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.14433422791770062,
+     "edits": 8,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 14,
+     "round": 2,
+     "label": "Twins",
+     "key": "d88e6598900cdd4b406b1ba0460608e6509b78c6",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 220.66666666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.14433422791770062,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 15,
+     "round": 2,
+     "label": "Twins",
+     "key": "f8aa11bd64a1854b6cf1f8027768c761974f2b28",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.6666666666666666,
+     "timeout_rate": 0.0,
+     "avg_steps": 234.54166666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.10266756125103399,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 16,
+     "round": 2,
+     "label": "Twins",
+     "key": "d9916e4a4a5a1e06b31fe914b8fc8efe2ee702e0",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 220.66666666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.14433422791770062,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 17,
+     "round": 2,
+     "label": "Twins",
+     "key": "a2e9bac980e76d9f426b9d2ddc634787f979b48a",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.375,
+     "escape_rate": 0.375,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.0,
+     "avg_steps": 220.75,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.061000894584367304,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 18,
+     "round": 2,
+     "label": "Twins",
+     "key": "d6f726e0dfaa0b21e76e5d9a96a7a2d001bdf0d4",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 220.66666666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.14433422791770062,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 19,
+     "round": 2,
+     "label": "Twins",
+     "key": "ab3fb577f57a431f8db097123cb65137ce4202ad",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.0,
+     "avg_steps": 210.29166666666666,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.14433422791770062,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 20,
+     "round": 2,
+     "label": "Twins",
+     "key": "881d69fcbe5ae2e811e3bbe78c20270bfa1e0900",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.375,
+     "escape_rate": 0.375,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.0,
+     "avg_steps": 227.33333333333334,
+     "predicted_error": 0.0639991054156327,
+     "predicted_win_rate": 0.4360008945843673,
+     "gap": 0.061000894584367304,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 21,
+     "round": 3,
+     "label": "Mansion",
+     "key": "b22540aea36afe2b4672cb3498ff86aee0d8d6df",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.0,
+     "avg_steps": 288.125,
+     "predicted_error": 0.09357224736095482,
+     "predicted_win_rate": 0.5935722473609548,
+     "gap": 0.15642775263904518,
+     "edits": 2,
+     "attempts": 2,
+     "deterministic": false
+    },
+    {
+     "eval": 22,
+     "round": 3,
+     "label": "random",
+     "key": "f04092b7853ac6f4b4b9de1ec78048f5d6555577",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.375,
+     "escape_rate": 0.375,
+     "tag_rate": 0.5833333333333334,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 220.875,
+     "predicted_error": 0.0937915946236928,
+     "predicted_win_rate": 0.4062084053763072,
+     "gap": 0.031208405376307202,
+     "edits": 7,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 23,
+     "round": 3,
+     "label": "Corridors",
+     "key": "f944073390ca638ee04119f722d2c175758a877a",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 294.1666666666667,
+     "predicted_error": 0.10828922160340793,
+     "predicted_win_rate": 0.3917107783965921,
+     "gap": 0.10004411172992539,
+     "edits": 9,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 24,
+     "round": 3,
+     "label": "Corridors",
+     "key": "9bb18ceeb742383720fe4bd9d8086e056a77487e",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 294.1666666666667,
+     "predicted_error": 0.10828922160340793,
+     "predicted_win_rate": 0.3917107783965921,
+     "gap": 0.10004411172992539,
+     "edits": 8,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 25,
+     "round": 3,
+     "label": "Corridors",
+     "key": "5ea508a8a7fc65b909b494af162cde4e47609c20",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 294.1666666666667,
+     "predicted_error": 0.10828922160340793,
+     "predicted_win_rate": 0.3917107783965921,
+     "gap": 0.10004411172992539,
+     "edits": 9,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 26,
+     "round": 3,
+     "label": "Mansion",
+     "key": "c9efa8824c7b18251398ed1ff62158e723a06be8",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 442.125,
+     "predicted_error": 0.11491594697277474,
+     "predicted_win_rate": 0.6149159469727747,
+     "gap": 0.05175071969389189,
+     "edits": 0,
+     "attempts": 0,
+     "deterministic": true
+    },
+    {
+     "eval": 27,
+     "round": 3,
+     "label": "Mansion",
+     "key": "552d935103b015de22cffa736674587be9a47aa1",
+     "balance_error": 0.20833333333333337,
+     "runner_win_rate": 0.7083333333333334,
+     "escape_rate": 0.7083333333333334,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.125,
+     "avg_steps": 399.9166666666667,
+     "predicted_error": 0.11491594697277474,
+     "predicted_win_rate": 0.6149159469727747,
+     "gap": 0.09341738636055863,
+     "edits": 1,
+     "attempts": 2,
+     "deterministic": false
+    },
+    {
+     "eval": 28,
+     "round": 3,
+     "label": "Foundry",
+     "key": "e544ba609f0ca312c5ab86afd3de096efcdbf2da",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.3333333333333333,
+     "avg_steps": 582.5833333333334,
+     "predicted_error": 0.12028613726416248,
+     "predicted_win_rate": 0.6202861372641625,
+     "gap": 0.004713862735837515,
+     "edits": 0,
+     "attempts": 0,
+     "deterministic": true
+    },
+    {
+     "eval": 29,
+     "round": 3,
+     "label": "Foundry",
+     "key": "45bce62741385bbdf2229068258a0b67f9ff9075",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.3333333333333333,
+     "avg_steps": 582.5833333333334,
+     "predicted_error": 0.12028613726416248,
+     "predicted_win_rate": 0.6202861372641625,
+     "gap": 0.004713862735837515,
+     "edits": 1,
+     "attempts": 2,
+     "deterministic": false
+    },
+    {
+     "eval": 30,
+     "round": 3,
+     "label": "Foundry",
+     "key": "8f802202cfc8723ee0d3527d3f6c21850c64a5c2",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 413.0833333333333,
+     "predicted_error": 0.12028613726416248,
+     "predicted_win_rate": 0.6202861372641625,
+     "gap": 0.004713862735837515,
+     "edits": 1,
+     "attempts": 1,
+     "deterministic": false
+    }
+   ],
+   "elapsed_s": 1044.2,
+   "episodes": 24,
+   "round_time": 60.0,
+   "seed0": 0,
+   "note": "surrogate-trained PPO (stage B/C): 3 refinement rounds x 1200 episodes, top-10 really evaluated per round, 30 real evaluations total; model editor_seed0.zip"
+  },
+  {
+   "arm": "ppo_surrogate",
+   "seed": 1,
+   "budget": 30,
+   "evaluations": 30,
+   "best_error": 0.0,
+   "best_win_rate": 0.5,
+   "best_key": "f2d3880b4bbf23a3c8313ae12ee49eeab83f7b2c",
+   "best_spec": {
+    "Hall": [
+     "#########################",
+     "#.......#...1......#....#",
+     "#.......#..######..#....#",
+     "#..###..#...............#",
+     "#..#........####..###...#",
+     "#..#..####.....#........#",
+     "#.....#..#.....#..####..#",
+     "#..####..##....#..#.....#",
+     "#..#.....#.....#..#..#..#",
+     "#..#...R..E.M....#......#",
+     "#........######..#..##..#",
+     "#..###.T.#....#..#..##..#",
+     "#..#.....#....#..#......#",
+     "#......2.........3......#",
+     "#########################"
+    ],
+    "Library": [
+     "#########################",
+     "#...1...#........#......#",
+     "#..##...#..####..#..##..#",
+     "#..##......##....#..##..#",
+     "#......##......#........#",
+     "#..###..#####..#..####..#",
+     "#..#.....#.....#..#.....#",
+     "#..#..#..#.....#....M...#",
+     "#.....#..#..#######..##.#",
+     "#..####..#..........##..#",
+     "#..#........####........#",
+     "#..#..####..#..#..####..#",
+     "#.....#........#.....#..#",
+     "#..#..#.......4......#..#",
+     "#########################"
+    ],
+    "Cellar": [
+     "#########################",
+     "#..2...#.......#.....4..#",
+     "#..##..#..###..#..###...#",
+     "#..##.....#.......#.....#",
+     "#.....##..#..##..#......#",
+     "#..#..##......##..##..###",
+     "#..#..#..####..#..#.....#",
+     "#.....#..#.....#..#..#..#",
+     "#..####..#..#..#..#..#..#",
+     "#..#......#.......#..#..#",
+     "#..#..##..#..###..#..#..#",
+     "#.....##.M........#.....#",
+     "#..#......####..#....##.#",
+     "#..#..#.........5..#....#",
+     "#########################"
+    ],
+    "Garden": [
+     "#########################",
+     "#...3...................#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#.......................#",
+     "#..##..##.....##...##...#",
+     "#..##..##.....##...##...#",
+     "#.......................#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#.......................#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#...................5...#",
+     "#########################"
+    ]
+   },
+   "start": "Mansion",
+   "curve": [
+    [
+     1,
+     0.375
+    ],
+    [
+     2,
+     0.375
+    ],
+    [
+     3,
+     0.375
+    ],
+    [
+     4,
+     0.375
+    ],
+    [
+     5,
+     0.375
+    ],
+    [
+     6,
+     0.375
+    ],
+    [
+     7,
+     0.375
+    ],
+    [
+     8,
+     0.29166666666666663
+    ],
+    [
+     9,
+     0.16666666666666663
+    ],
+    [
+     10,
+     0.125
+    ],
+    [
+     11,
+     0.0
+    ],
+    [
+     12,
+     0.0
+    ],
+    [
+     13,
+     0.0
+    ],
+    [
+     14,
+     0.0
+    ],
+    [
+     15,
+     0.0
+    ],
+    [
+     16,
+     0.0
+    ],
+    [
+     17,
+     0.0
+    ],
+    [
+     18,
+     0.0
+    ],
+    [
+     19,
+     0.0
+    ],
+    [
+     20,
+     0.0
+    ],
+    [
+     21,
+     0.0
+    ],
+    [
+     22,
+     0.0
+    ],
+    [
+     23,
+     0.0
+    ],
+    [
+     24,
+     0.0
+    ],
+    [
+     25,
+     0.0
+    ],
+    [
+     26,
+     0.0
+    ],
+    [
+     27,
+     0.0
+    ],
+    [
+     28,
+     0.0
+    ],
+    [
+     29,
+     0.0
+    ],
+    [
+     30,
+     0.0
+    ]
+   ],
+   "records": [
+    {
+     "eval": 1,
+     "round": 1,
+     "label": "Arena",
+     "key": "7836ecb336e192af6fd0c4219763b10d375d10bb",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.125,
+     "escape_rate": 0.125,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.25,
+     "avg_steps": 404.125,
+     "predicted_error": 0.017896862351126808,
+     "predicted_win_rate": 0.4821031376488732,
+     "gap": 0.3571031376488732,
+     "edits": 8,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 2,
+     "round": 1,
+     "label": "Arena",
+     "key": "47195b3826ba0c357bbb35ee5d2c75b0436ca37e",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.125,
+     "escape_rate": 0.125,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.4583333333333333,
+     "avg_steps": 541.875,
+     "predicted_error": 0.02315172162511464,
+     "predicted_win_rate": 0.47684827837488536,
+     "gap": 0.35184827837488536,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 3,
+     "round": 1,
+     "label": "Arena",
+     "key": "9265fd777e0b5115ec7a07b63da7b002ca6fcec4",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.125,
+     "escape_rate": 0.125,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.4583333333333333,
+     "avg_steps": 541.875,
+     "predicted_error": 0.02315172162511464,
+     "predicted_win_rate": 0.47684827837488536,
+     "gap": 0.35184827837488536,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 4,
+     "round": 1,
+     "label": "Arena",
+     "key": "da2f3c9929f1fc98b4ab94ca4e7eda265ae07e3a",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.125,
+     "escape_rate": 0.125,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.4583333333333333,
+     "avg_steps": 541.875,
+     "predicted_error": 0.02315172162511464,
+     "predicted_win_rate": 0.47684827837488536,
+     "gap": 0.35184827837488536,
+     "edits": 3,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 5,
+     "round": 1,
+     "label": "Arena",
+     "key": "88875642798ea6784505e31a416caa14d0a1d1ad",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.125,
+     "escape_rate": 0.125,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.4583333333333333,
+     "avg_steps": 541.875,
+     "predicted_error": 0.053331626750423244,
+     "predicted_win_rate": 0.44666837324957676,
+     "gap": 0.32166837324957676,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 6,
+     "round": 1,
+     "label": "Arena",
+     "key": "52115d3d7d95145a337fd18f8ca3a276c20dc526",
+     "balance_error": 0.4166666666666667,
+     "runner_win_rate": 0.08333333333333333,
+     "escape_rate": 0.08333333333333333,
+     "tag_rate": 0.5416666666666666,
+     "timeout_rate": 0.375,
+     "avg_steps": 449.2916666666667,
+     "predicted_error": 0.05391373232508223,
+     "predicted_win_rate": 0.44608626767491777,
+     "gap": 0.36275293434158445,
+     "edits": 8,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 7,
+     "round": 1,
+     "label": "Arena",
+     "key": "b247c60db7c9b1bc229e4dc51818c74de55a6813",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.125,
+     "escape_rate": 0.125,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.4583333333333333,
+     "avg_steps": 541.875,
+     "predicted_error": 0.055205307501402734,
+     "predicted_win_rate": 0.44479469249859727,
+     "gap": 0.31979469249859727,
+     "edits": 5,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 8,
+     "round": 1,
+     "label": "Arena",
+     "key": "d53e4de8f1c06aff2cfe6c95baedc5b7cabac55e",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.20833333333333334,
+     "escape_rate": 0.20833333333333334,
+     "tag_rate": 0.5416666666666666,
+     "timeout_rate": 0.25,
+     "avg_steps": 345.6666666666667,
+     "predicted_error": 0.06366306977642544,
+     "predicted_win_rate": 0.5636630697764254,
+     "gap": 0.2280035968902412,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 9,
+     "round": 1,
+     "label": "Foundry",
+     "key": "098b50858d504cde0f879b630d1aef867e8463e4",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.0,
+     "avg_steps": 366.875,
+     "predicted_error": 0.07211228411575965,
+     "predicted_win_rate": 0.42788771588424035,
+     "gap": 0.09455438255090698,
+     "edits": 11,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 10,
+     "round": 1,
+     "label": "Foundry",
+     "key": "dc86fab9f009c07a153aad5aeb7f5486706be9ef",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.2916666666666667,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 409.2916666666667,
+     "predicted_error": 0.07645021475197128,
+     "predicted_win_rate": 0.4235497852480287,
+     "gap": 0.04854978524802872,
+     "edits": 17,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 11,
+     "round": 2,
+     "label": "Mansion",
+     "key": "f2d3880b4bbf23a3c8313ae12ee49eeab83f7b2c",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.375,
+     "timeout_rate": 0.125,
+     "avg_steps": 330.75,
+     "predicted_error": 0.02720774341121912,
+     "predicted_win_rate": 0.5272077434112191,
+     "gap": -0.02720774341121912,
+     "edits": 21,
+     "attempts": 35,
+     "deterministic": false
+    },
+    {
+     "eval": 12,
+     "round": 2,
+     "label": "Mansion",
+     "key": "611292d292e056e2e79ed7676f950a894bc07f4e",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 362.625,
+     "predicted_error": 0.033434997118771514,
+     "predicted_win_rate": 0.5334349971187715,
+     "gap": 0.09156500288122849,
+     "edits": 27,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 13,
+     "round": 2,
+     "label": "Mansion",
+     "key": "0385f663cb668fe128e976a0c22cdc1b3302824c",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 337.0416666666667,
+     "predicted_error": 0.06677804474653115,
+     "predicted_win_rate": 0.5667780447465312,
+     "gap": -0.06677804474653115,
+     "edits": 20,
+     "attempts": 35,
+     "deterministic": false
+    },
+    {
+     "eval": 14,
+     "round": 2,
+     "label": "Mansion",
+     "key": "d5173386e9c1c5fcd14b95e6efdf403f4839e3bf",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 375.0416666666667,
+     "predicted_error": 0.07020340478773335,
+     "predicted_win_rate": 0.5702034047877333,
+     "gap": 0.05479659521226665,
+     "edits": 13,
+     "attempts": 14,
+     "deterministic": true
+    },
+    {
+     "eval": 15,
+     "round": 2,
+     "label": "Mansion",
+     "key": "e9f5a6d7dc2f7a6df65ce3bbda0a3ecff3285ac2",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 369.0,
+     "predicted_error": 0.07516602528959804,
+     "predicted_win_rate": 0.575166025289598,
+     "gap": -0.07516602528959804,
+     "edits": 35,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 16,
+     "round": 2,
+     "label": "Mansion",
+     "key": "b3b0a9b7a12fb84ddcbdbb394dd2346ca734d3fa",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 369.0,
+     "predicted_error": 0.07516602528959804,
+     "predicted_win_rate": 0.575166025289598,
+     "gap": -0.07516602528959804,
+     "edits": 33,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 17,
+     "round": 2,
+     "label": "Mansion",
+     "key": "fbc597fd127006ce8f34eff86e3c813ce9572cdb",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.125,
+     "avg_steps": 315.3333333333333,
+     "predicted_error": 0.07516602528959804,
+     "predicted_win_rate": 0.575166025289598,
+     "gap": 0.09150064137706859,
+     "edits": 34,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 18,
+     "round": 2,
+     "label": "Mansion",
+     "key": "9444643b0e5d874867f4fe656b4be41fc817d4e7",
+     "balance_error": 0.04166666666666663,
+     "runner_win_rate": 0.5416666666666666,
+     "escape_rate": 0.5416666666666666,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 372.0833333333333,
+     "predicted_error": 0.08616593006383921,
+     "predicted_win_rate": 0.5861659300638392,
+     "gap": -0.044499263397172584,
+     "edits": 29,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 19,
+     "round": 2,
+     "label": "Mansion",
+     "key": "e4def280bf2c34b156e8c7f2e5ec366f040896a6",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 378.75,
+     "predicted_error": 0.09455391060690621,
+     "predicted_win_rate": 0.5945539106069062,
+     "gap": -0.01122057727357284,
+     "edits": 27,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 20,
+     "round": 2,
+     "label": "Mansion",
+     "key": "a4d053eddea869a45b3876bb1e476b304bc3d054",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.625,
+     "avg_steps": 690.75,
+     "predicted_error": 0.09455391060690621,
+     "predicted_win_rate": 0.5945539106069062,
+     "gap": 0.07211275605976047,
+     "edits": 29,
+     "attempts": 36,
+     "deterministic": false
+    },
+    {
+     "eval": 21,
+     "round": 3,
+     "label": "Mansion",
+     "key": "2f30e5770b49a033661ee40af7224704a19a3d5d",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 282.75,
+     "predicted_error": 0.0018288492338326412,
+     "predicted_win_rate": 0.49817115076616736,
+     "gap": 0.12317115076616736,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 22,
+     "round": 3,
+     "label": "Mansion",
+     "key": "4a3ccfbf4df28ce56bfba8d5e52367a70b77c407",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.375,
+     "timeout_rate": 0.125,
+     "avg_steps": 351.5416666666667,
+     "predicted_error": 0.004822329232099021,
+     "predicted_win_rate": 0.504822329232099,
+     "gap": -0.004822329232099021,
+     "edits": 34,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 23,
+     "round": 3,
+     "label": "Mansion",
+     "key": "aeebe87550a1042fc55d2d75ed2aa3b0f6fa6212",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.125,
+     "avg_steps": 344.0833333333333,
+     "predicted_error": 0.008335238468412498,
+     "predicted_win_rate": 0.4916647615315875,
+     "gap": 0.15833142819825413,
+     "edits": 33,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 24,
+     "round": 3,
+     "label": "Mansion",
+     "key": "6b03c9d76280b630ed4ed0200344b9cb5d0e028c",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 431.0,
+     "predicted_error": 0.009312356043349235,
+     "predicted_win_rate": 0.5093123560433492,
+     "gap": 0.11568764395665077,
+     "edits": 36,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 25,
+     "round": 3,
+     "label": "Mansion",
+     "key": "8b7e5481cc2beecc2a582cd0577a205a9d7276e3",
+     "balance_error": 0.08333333333333331,
+     "runner_win_rate": 0.4166666666666667,
+     "escape_rate": 0.4166666666666667,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 399.875,
+     "predicted_error": 0.010002069511986456,
+     "predicted_win_rate": 0.5100020695119865,
+     "gap": 0.07333126382134686,
+     "edits": 37,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 26,
+     "round": 3,
+     "label": "Mansion",
+     "key": "286f11e65fa3bd40b130e688735506d92028e2b9",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.125,
+     "avg_steps": 315.3333333333333,
+     "predicted_error": 0.023445580310733294,
+     "predicted_win_rate": 0.5234455803107333,
+     "gap": 0.14322108635593334,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 27,
+     "round": 3,
+     "label": "Mansion",
+     "key": "e1ee635dfae7c73bfe9a0172df4243d3bfe273f4",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 433.2083333333333,
+     "predicted_error": 0.02344918021046838,
+     "predicted_win_rate": 0.4765508197895316,
+     "gap": 0.10155081978953162,
+     "edits": 29,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 28,
+     "round": 3,
+     "label": "Mansion",
+     "key": "dcb4239330855aec1a4022138cb4137151e1ebe0",
+     "balance_error": 0.041666666666666685,
+     "runner_win_rate": 0.4583333333333333,
+     "escape_rate": 0.4583333333333333,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.2916666666666667,
+     "avg_steps": 463.2083333333333,
+     "predicted_error": 0.02344918021046838,
+     "predicted_win_rate": 0.4765508197895316,
+     "gap": 0.018217486456198306,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 29,
+     "round": 3,
+     "label": "Mansion",
+     "key": "6cd3e4cfde13ac553557106398aabb91690b291d",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.375,
+     "escape_rate": 0.375,
+     "tag_rate": 0.25,
+     "timeout_rate": 0.375,
+     "avg_steps": 493.2916666666667,
+     "predicted_error": 0.02344918021046838,
+     "predicted_win_rate": 0.4765508197895316,
+     "gap": 0.10155081978953162,
+     "edits": 18,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 30,
+     "round": 3,
+     "label": "Mansion",
+     "key": "57821c9ea8d2af2f19e72480b6f7c609b3d627e7",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.08333333333333333,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 393.0833333333333,
+     "predicted_error": 0.034547680172489215,
+     "predicted_win_rate": 0.5345476801724892,
+     "gap": 0.21545231982751079,
+     "edits": 36,
+     "attempts": 40,
+     "deterministic": false
+    }
+   ],
+   "elapsed_s": 1662.0,
+   "episodes": 24,
+   "round_time": 60.0,
+   "seed0": 0,
+   "note": "surrogate-trained PPO (stage B/C): 3 refinement rounds x 1200 episodes, top-10 really evaluated per round, 30 real evaluations total; model editor_seed1.zip"
+  },
+  {
+   "arm": "ppo_surrogate",
+   "seed": 2,
+   "budget": 30,
+   "evaluations": 30,
+   "best_error": 0.0,
+   "best_win_rate": 0.5,
+   "best_key": "3c86cc213dc3e33449bba7128387180745de52ea",
+   "best_spec": {
+    "Hall": [
+     "#########################",
+     "#.......#...1......#....#",
+     "#.......#..######..#....#",
+     "#..###..##..............#",
+     "#..#......RT####..###...#",
+     "#..#..####.EM..#........#",
+     "#.....#..#.....#..####..#",
+     "#..####..#.....#..#.....#",
+     "#..#.....#.....#..#..#..#",
+     "#..#..#..........#......#",
+     "#.....#..######..#..##..#",
+     "#..####..#....#..#..##..#",
+     "#..#.....#....#..#......#",
+     "#......2.........3......#",
+     "#########################"
+    ],
+    "Library": [
+     "#########################",
+     "#...1...#........#......#",
+     "#..##...#..####..#..##..#",
+     "#..##......##....#..##..#",
+     "#......##......#........#",
+     "#..###..#####..#..####..#",
+     "#..#.....#.....#..#.....#",
+     "#..#..#..#.....#....M...#",
+     "#.....#..#..#######..##.#",
+     "#..####..#..........##..#",
+     "#..#........####........#",
+     "#..#..####..#..#..####..#",
+     "#.....#........#.....#..#",
+     "#..#..#.......4......#..#",
+     "#########################"
+    ],
+    "Cellar": [
+     "#########################",
+     "#..2...#.......#.....4..#",
+     "#..##..#..###..#..###...#",
+     "#..##.....#.......#.....#",
+     "#.....##..#..##..#......#",
+     "#..#..##......##..##..###",
+     "#..#..#..####..#..#.....#",
+     "#.....#..#.....#..#..#..#",
+     "#..####..#..#..#..#..#..#",
+     "#..#......#.......#..#..#",
+     "#..#..##..#..###..#..#..#",
+     "#.....##.M........#.....#",
+     "#..#......####..#....##.#",
+     "#..#..#.........5..#....#",
+     "#########################"
+    ],
+    "Garden": [
+     "#########################",
+     "#...3...................#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#.......................#",
+     "#..##..##.....##...##...#",
+     "#..##..##.....##...##...#",
+     "#.......................#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#.......................#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#...................5...#",
+     "#########################"
+    ]
+   },
+   "start": "Mansion",
+   "curve": [
+    [
+     1,
+     0.29166666666666663
+    ],
+    [
+     2,
+     0.29166666666666663
+    ],
+    [
+     3,
+     0.20833333333333331
+    ],
+    [
+     4,
+     0.16666666666666669
+    ],
+    [
+     5,
+     0.16666666666666669
+    ],
+    [
+     6,
+     0.16666666666666669
+    ],
+    [
+     7,
+     0.08333333333333331
+    ],
+    [
+     8,
+     0.08333333333333331
+    ],
+    [
+     9,
+     0.08333333333333331
+    ],
+    [
+     10,
+     0.08333333333333331
+    ],
+    [
+     11,
+     0.08333333333333331
+    ],
+    [
+     12,
+     0.08333333333333331
+    ],
+    [
+     13,
+     0.0
+    ],
+    [
+     14,
+     0.0
+    ],
+    [
+     15,
+     0.0
+    ],
+    [
+     16,
+     0.0
+    ],
+    [
+     17,
+     0.0
+    ],
+    [
+     18,
+     0.0
+    ],
+    [
+     19,
+     0.0
+    ],
+    [
+     20,
+     0.0
+    ],
+    [
+     21,
+     0.0
+    ],
+    [
+     22,
+     0.0
+    ],
+    [
+     23,
+     0.0
+    ],
+    [
+     24,
+     0.0
+    ],
+    [
+     25,
+     0.0
+    ],
+    [
+     26,
+     0.0
+    ],
+    [
+     27,
+     0.0
+    ],
+    [
+     28,
+     0.0
+    ],
+    [
+     29,
+     0.0
+    ],
+    [
+     30,
+     0.0
+    ]
+   ],
+   "records": [
+    {
+     "eval": 1,
+     "round": 1,
+     "label": "Arena",
+     "key": "062bb0f6e4e5210b89d4994077a65ce8b39a3c07",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.20833333333333334,
+     "escape_rate": 0.20833333333333334,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 320.625,
+     "predicted_error": 0.00240524187711183,
+     "predicted_win_rate": 0.49759475812288817,
+     "gap": 0.2892614247895548,
+     "edits": 16,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 2,
+     "round": 1,
+     "label": "Arena",
+     "key": "619a0fbf82636ad39cf2f357c0c57760dcd77d78",
+     "balance_error": 0.33333333333333337,
+     "runner_win_rate": 0.16666666666666666,
+     "escape_rate": 0.16666666666666666,
+     "tag_rate": 0.5416666666666666,
+     "timeout_rate": 0.2916666666666667,
+     "avg_steps": 395.4583333333333,
+     "predicted_error": 0.008095566424526857,
+     "predicted_win_rate": 0.49190443357547314,
+     "gap": 0.3252377669088065,
+     "edits": 32,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 3,
+     "round": 1,
+     "label": "Arena",
+     "key": "44e73f60814d02090c5b9f797dfa979f3e20713f",
+     "balance_error": 0.20833333333333331,
+     "runner_win_rate": 0.2916666666666667,
+     "escape_rate": 0.2916666666666667,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 338.875,
+     "predicted_error": 0.008095566424526857,
+     "predicted_win_rate": 0.49190443357547314,
+     "gap": 0.20023776690880646,
+     "edits": 20,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 4,
+     "round": 1,
+     "label": "Mansion",
+     "key": "956a3ec80483e841bc29de861a5ee010688dc167",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.3333333333333333,
+     "avg_steps": 545.7916666666666,
+     "predicted_error": 0.021567213640303506,
+     "predicted_win_rate": 0.4784327863596965,
+     "gap": 0.14509945302636318,
+     "edits": 28,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 5,
+     "round": 1,
+     "label": "Arena",
+     "key": "8569dcc4359c8c4083516c66c1b547bd55d9a280",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.20833333333333334,
+     "escape_rate": 0.20833333333333334,
+     "tag_rate": 0.5416666666666666,
+     "timeout_rate": 0.25,
+     "avg_steps": 433.5833333333333,
+     "predicted_error": 0.0260492465195738,
+     "predicted_win_rate": 0.4739507534804262,
+     "gap": 0.26561742014709283,
+     "edits": 34,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 6,
+     "round": 1,
+     "label": "Arena",
+     "key": "aeca1a529a3396fe96e8f30c4744abf3db2bd836",
+     "balance_error": 0.33333333333333337,
+     "runner_win_rate": 0.16666666666666666,
+     "escape_rate": 0.16666666666666666,
+     "tag_rate": 0.7083333333333334,
+     "timeout_rate": 0.125,
+     "avg_steps": 340.9166666666667,
+     "predicted_error": 0.03176977200334219,
+     "predicted_win_rate": 0.4682302279966578,
+     "gap": 0.3015635613299912,
+     "edits": 36,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 7,
+     "round": 1,
+     "label": "Arena",
+     "key": "385d241cd672a0ad691cc0c4c7e9da84e6852463",
+     "balance_error": 0.08333333333333331,
+     "runner_win_rate": 0.4166666666666667,
+     "escape_rate": 0.4166666666666667,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 281.5,
+     "predicted_error": 0.03176977200334219,
+     "predicted_win_rate": 0.4682302279966578,
+     "gap": 0.051563561329991126,
+     "edits": 35,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 8,
+     "round": 1,
+     "label": "Mansion",
+     "key": "65f36e7b5f31846792c83c57a828a01737cc5544",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.20833333333333334,
+     "escape_rate": 0.20833333333333334,
+     "tag_rate": 0.4583333333333333,
+     "timeout_rate": 0.3333333333333333,
+     "avg_steps": 464.0,
+     "predicted_error": 0.03756162786632178,
+     "predicted_win_rate": 0.5375616278663218,
+     "gap": 0.25410503880034485,
+     "edits": 32,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 9,
+     "round": 1,
+     "label": "Corridors",
+     "key": "31e5c21f9e81ba31d77526f4cfe550cb6f0a2279",
+     "balance_error": 0.33333333333333337,
+     "runner_win_rate": 0.16666666666666666,
+     "escape_rate": 0.16666666666666666,
+     "tag_rate": 0.7916666666666666,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 186.70833333333334,
+     "predicted_error": 0.08395544141582717,
+     "predicted_win_rate": 0.41604455858417283,
+     "gap": 0.2493778919175062,
+     "edits": 26,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 10,
+     "round": 1,
+     "label": "Mansion",
+     "key": "afb723f39c49717d933db8a5becd5af0e99c75a6",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.25,
+     "avg_steps": 452.9166666666667,
+     "predicted_error": 0.09381561765882407,
+     "predicted_win_rate": 0.5938156176588241,
+     "gap": -0.010482284325490698,
+     "edits": 1,
+     "attempts": 1,
+     "deterministic": true
+    },
+    {
+     "eval": 11,
+     "round": 2,
+     "label": "Mansion",
+     "key": "073c5c3af774b8142b5a4590382d4e3931b743f2",
+     "balance_error": 0.20833333333333337,
+     "runner_win_rate": 0.7083333333333334,
+     "escape_rate": 0.7083333333333334,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.125,
+     "avg_steps": 318.5833333333333,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.20775406132742608,
+     "edits": 28,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 12,
+     "round": 2,
+     "label": "Mansion",
+     "key": "448f9f4a95602be1fc08ece4bbcae327555dab36",
+     "balance_error": 0.375,
+     "runner_win_rate": 0.875,
+     "escape_rate": 0.875,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 316.1666666666667,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.3744207279940927,
+     "edits": 37,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 13,
+     "round": 2,
+     "label": "Mansion",
+     "key": "3c86cc213dc3e33449bba7128387180745de52ea",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.375,
+     "avg_steps": 460.4166666666667,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": -0.0005792720059072942,
+     "edits": 37,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 14,
+     "round": 2,
+     "label": "Mansion",
+     "key": "465419df3ca23129ab74d684a305c3440b016d2f",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 363.125,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.1244207279940927,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 15,
+     "round": 2,
+     "label": "Mansion",
+     "key": "eb3465e96ba656d63f1205c1486cc5d1664121ad",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 363.125,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.1244207279940927,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 16,
+     "round": 2,
+     "label": "Mansion",
+     "key": "77f3692d5a6c9c4f3bee58d927488accb9aa09d2",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 370.5416666666667,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.16608739466075934,
+     "edits": 29,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 17,
+     "round": 2,
+     "label": "Mansion",
+     "key": "faeddcc5d0ad6f693f8682d74367bb3225bf17f1",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 363.125,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.1244207279940927,
+     "edits": 38,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 18,
+     "round": 2,
+     "label": "Mansion",
+     "key": "fcb1e5252545be6a11e0c5b209caced06a8fecdf",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 363.125,
+     "predicted_error": 0.0005792720059072942,
+     "predicted_win_rate": 0.4994207279940927,
+     "gap": 0.1244207279940927,
+     "edits": 38,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 19,
+     "round": 2,
+     "label": "Mansion",
+     "key": "cba618610cd4893d1a420832ae4515baab9f7ec1",
+     "balance_error": 0.20833333333333337,
+     "runner_win_rate": 0.7083333333333334,
+     "escape_rate": 0.7083333333333334,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 329.7083333333333,
+     "predicted_error": 0.005143869481389118,
+     "predicted_win_rate": 0.4948561305186109,
+     "gap": 0.20318946385194425,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 20,
+     "round": 2,
+     "label": "Mansion",
+     "key": "4531e054b811318367a1b81b4b312fd87afa6da8",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.2916666666666667,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 355.4166666666667,
+     "predicted_error": 0.010610740500910654,
+     "predicted_win_rate": 0.48938925949908935,
+     "gap": 0.11438925949908935,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 21,
+     "round": 3,
+     "label": "Mansion",
+     "key": "486dfa271efaa68e07038d4352ea2afdc0d67689",
+     "balance_error": 0.20833333333333337,
+     "runner_win_rate": 0.7083333333333334,
+     "escape_rate": 0.7083333333333334,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 403.1666666666667,
+     "predicted_error": 0.020612497332787916,
+     "predicted_win_rate": 0.5206124973327879,
+     "gap": 0.18772083600054545,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 22,
+     "round": 3,
+     "label": "Foundry",
+     "key": "cae8ada54b3d660836a55f0bab89b2b39d909d34",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.0,
+     "avg_steps": 368.9166666666667,
+     "predicted_error": 0.030694137249732023,
+     "predicted_win_rate": 0.530694137249732,
+     "gap": 0.1359725294169346,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 23,
+     "round": 3,
+     "label": "Mansion",
+     "key": "f4e99e3f4fc43a5c077d39ee7213c24bd2a7f649",
+     "balance_error": 0.04166666666666663,
+     "runner_win_rate": 0.5416666666666666,
+     "escape_rate": 0.5416666666666666,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.125,
+     "avg_steps": 336.7083333333333,
+     "predicted_error": 0.037227875422514045,
+     "predicted_win_rate": 0.537227875422514,
+     "gap": 0.0044387912441525845,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 24,
+     "round": 3,
+     "label": "Mansion",
+     "key": "7fc98fde4597e01801eccb469204989ceeec6f63",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.25,
+     "avg_steps": 426.4166666666667,
+     "predicted_error": 0.037227875422514045,
+     "predicted_win_rate": 0.537227875422514,
+     "gap": 0.08777212457748595,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 25,
+     "round": 3,
+     "label": "Foundry",
+     "key": "6b774a97037037df5dacd1a05f09f3c90dc17a38",
+     "balance_error": 0.041666666666666685,
+     "runner_win_rate": 0.4583333333333333,
+     "escape_rate": 0.4583333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.041666666666666664,
+     "avg_steps": 453.75,
+     "predicted_error": 0.040780388436785664,
+     "predicted_win_rate": 0.5407803884367857,
+     "gap": 0.0008862782298810212,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 26,
+     "round": 3,
+     "label": "Mansion",
+     "key": "e28ae144f73ff7a866a4983078ed26d1b24a8cda",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.7916666666666666,
+     "escape_rate": 0.7916666666666666,
+     "tag_rate": 0.08333333333333333,
+     "timeout_rate": 0.125,
+     "avg_steps": 359.375,
+     "predicted_error": 0.04319243611236767,
+     "predicted_win_rate": 0.5431924361123677,
+     "gap": 0.24847423055429896,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 27,
+     "round": 3,
+     "label": "Mansion",
+     "key": "4ebaf8303060b9452be3f29525d7bd31a5f947e0",
+     "balance_error": 0.20833333333333337,
+     "runner_win_rate": 0.7083333333333334,
+     "escape_rate": 0.7083333333333334,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 403.1666666666667,
+     "predicted_error": 0.04319243611236767,
+     "predicted_win_rate": 0.5431924361123677,
+     "gap": 0.1651408972209657,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 28,
+     "round": 3,
+     "label": "Foundry",
+     "key": "0d59725e65348d042c115761e4105908cda81e9c",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 539.75,
+     "predicted_error": 0.04604724026849827,
+     "predicted_win_rate": 0.5460472402684983,
+     "gap": 0.12061942639816836,
+     "edits": 39,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 29,
+     "round": 3,
+     "label": "Foundry",
+     "key": "08bbafbb2f4b2def8b569586c74a8b8c7f128dfb",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 490.875,
+     "predicted_error": 0.04604724026849827,
+     "predicted_win_rate": 0.5460472402684983,
+     "gap": 0.12061942639816836,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 30,
+     "round": 3,
+     "label": "Foundry",
+     "key": "343910600f2c3a6ad27774293ad513ce3ac33099",
+     "balance_error": 0.04166666666666663,
+     "runner_win_rate": 0.5416666666666666,
+     "escape_rate": 0.5416666666666666,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.25,
+     "avg_steps": 549.5,
+     "predicted_error": 0.04604724026849827,
+     "predicted_win_rate": 0.5460472402684983,
+     "gap": -0.004380573601831639,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    }
+   ],
+   "elapsed_s": 1506.6,
+   "episodes": 24,
+   "round_time": 60.0,
+   "seed0": 0,
+   "note": "surrogate-trained PPO (stage B/C): 3 refinement rounds x 1200 episodes, top-10 really evaluated per round, 30 real evaluations total; model editor_seed2.zip"
+  },
+  {
+   "arm": "ppo_surrogate",
+   "seed": 3,
+   "budget": 30,
+   "evaluations": 30,
+   "best_error": 0.0,
+   "best_win_rate": 0.5,
+   "best_key": "fe82d8eee454f63f7f0ee0b126c861129aaff08a",
+   "best_spec": {
+    "Hall": [
+     "###########E###########",
+     "#1...................2#",
+     "#.....................#",
+     "#.T##.................#",
+     "#..##.................#",
+     "#........#####........#",
+     "#........#####.#......#",
+     "#........#####........#",
+     "#.................##..#",
+     "#.................##..#",
+     "#....................M#",
+     "#3.....M.............5#",
+     "#######################"
+    ],
+    "Maze": [
+     "#########################",
+     "###M.........##........1#",
+     "###..........##.........#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "E....##..........##.....#",
+     "#....##..........##.....#",
+     "#..##..##..##..##..##...#",
+     "#..##..##..##..##..##...#",
+     "#.......................#",
+     "#.......................#",
+     "#..##..##..##.M##..##...#",
+     "#............##.........#",
+     "#4...........##........3#",
+     "#########################"
+    ],
+    "Yard": [
+     "#######################",
+     "#2....................#",
+     "#.....................#",
+     "#..##.M.##...##...##..#",
+     "#..##...##...##...##.R#",
+     "#.....................#",
+     "#.....................#",
+     "#..##...##...##...##..#",
+     "#..##...##...##...##..#",
+     "#...........M.........#",
+     "#.....................#",
+     "#..##...##...##...##..#",
+     "#.....................E",
+     "#5...................4#",
+     "#######################"
+    ]
+   },
+   "start": "Foundry",
+   "curve": [
+    [
+     1,
+     0.33333333333333337
+    ],
+    [
+     2,
+     0.125
+    ],
+    [
+     3,
+     0.125
+    ],
+    [
+     4,
+     0.041666666666666685
+    ],
+    [
+     5,
+     0.041666666666666685
+    ],
+    [
+     6,
+     0.041666666666666685
+    ],
+    [
+     7,
+     0.041666666666666685
+    ],
+    [
+     8,
+     0.041666666666666685
+    ],
+    [
+     9,
+     0.041666666666666685
+    ],
+    [
+     10,
+     0.041666666666666685
+    ],
+    [
+     11,
+     0.041666666666666685
+    ],
+    [
+     12,
+     0.041666666666666685
+    ],
+    [
+     13,
+     0.041666666666666685
+    ],
+    [
+     14,
+     0.041666666666666685
+    ],
+    [
+     15,
+     0.041666666666666685
+    ],
+    [
+     16,
+     0.041666666666666685
+    ],
+    [
+     17,
+     0.041666666666666685
+    ],
+    [
+     18,
+     0.04166666666666663
+    ],
+    [
+     19,
+     0.04166666666666663
+    ],
+    [
+     20,
+     0.04166666666666663
+    ],
+    [
+     21,
+     0.0
+    ],
+    [
+     22,
+     0.0
+    ],
+    [
+     23,
+     0.0
+    ],
+    [
+     24,
+     0.0
+    ],
+    [
+     25,
+     0.0
+    ],
+    [
+     26,
+     0.0
+    ],
+    [
+     27,
+     0.0
+    ],
+    [
+     28,
+     0.0
+    ],
+    [
+     29,
+     0.0
+    ],
+    [
+     30,
+     0.0
+    ]
+   ],
+   "records": [
+    {
+     "eval": 1,
+     "round": 1,
+     "label": "Arena",
+     "key": "d7ad9cf94c56217a16582bba5fdeec12ee125d3e",
+     "balance_error": 0.33333333333333337,
+     "runner_win_rate": 0.16666666666666666,
+     "escape_rate": 0.16666666666666666,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 443.0833333333333,
+     "predicted_error": 0.00240524187711183,
+     "predicted_win_rate": 0.49759475812288817,
+     "gap": 0.33092809145622154,
+     "edits": 21,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 2,
+     "round": 1,
+     "label": "Arena",
+     "key": "e5b83becebadf83758fd247b430508e7272aafec",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.375,
+     "escape_rate": 0.375,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 390.75,
+     "predicted_error": 0.016493922859954824,
+     "predicted_win_rate": 0.4835060771400452,
+     "gap": 0.10850607714004518,
+     "edits": 22,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 3,
+     "round": 1,
+     "label": "Arena",
+     "key": "f0a6966675f576a12f1ec475fdce7605dd4e5622",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.20833333333333334,
+     "escape_rate": 0.20833333333333334,
+     "tag_rate": 0.4583333333333333,
+     "timeout_rate": 0.3333333333333333,
+     "avg_steps": 420.0,
+     "predicted_error": 0.05154675111110585,
+     "predicted_win_rate": 0.44845324888889415,
+     "gap": 0.24011991555556078,
+     "edits": 9,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 4,
+     "round": 1,
+     "label": "Mansion",
+     "key": "3c5dc125f2d3afeb3c12b2e8d1b35a205ce7dd4e",
+     "balance_error": 0.041666666666666685,
+     "runner_win_rate": 0.4583333333333333,
+     "escape_rate": 0.4583333333333333,
+     "tag_rate": 0.08333333333333333,
+     "timeout_rate": 0.4583333333333333,
+     "avg_steps": 550.2083333333334,
+     "predicted_error": 0.05360489915370903,
+     "predicted_win_rate": 0.553604899153709,
+     "gap": -0.011938232487042344,
+     "edits": 13,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 5,
+     "round": 1,
+     "label": "Mansion",
+     "key": "e176b5f1a55b322cd65cc1ae1e6ff3ba5079b3f9",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.2916666666666667,
+     "avg_steps": 434.875,
+     "predicted_error": 0.09284561723872753,
+     "predicted_win_rate": 0.5928456172387275,
+     "gap": -0.009512283905394159,
+     "edits": 13,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 6,
+     "round": 1,
+     "label": "Mansion",
+     "key": "0d97bbc4901b8e4b899981fa925f9cf6582041a8",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.25,
+     "avg_steps": 484.2916666666667,
+     "predicted_error": 0.09381561765882407,
+     "predicted_win_rate": 0.5938156176588241,
+     "gap": -0.010482284325490698,
+     "edits": 2,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 7,
+     "round": 1,
+     "label": "Mansion",
+     "key": "b2d21bebcd1d6aa39c1c9f859a36706a9e6d2dea",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 435.6666666666667,
+     "predicted_error": 0.09381561765882407,
+     "predicted_win_rate": 0.5938156176588241,
+     "gap": 0.03118438234117593,
+     "edits": 24,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 8,
+     "round": 1,
+     "label": "Mansion",
+     "key": "b40dcf231243247a5483083133e64f2afc820ab5",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.125,
+     "avg_steps": 366.5833333333333,
+     "predicted_error": 0.09381561765882407,
+     "predicted_win_rate": 0.5938156176588241,
+     "gap": 0.15618438234117593,
+     "edits": 15,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 9,
+     "round": 1,
+     "label": "Mansion",
+     "key": "78e3a4166dbbcd3edeea6bedc077584456b216f2",
+     "balance_error": 0.29166666666666663,
+     "runner_win_rate": 0.7916666666666666,
+     "escape_rate": 0.7916666666666666,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 367.6666666666667,
+     "predicted_error": 0.09404358739071916,
+     "predicted_win_rate": 0.5940435873907192,
+     "gap": 0.19762307927594747,
+     "edits": 16,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 10,
+     "round": 1,
+     "label": "Mansion",
+     "key": "1c86c637a595732328868310d1122543c8f4356e",
+     "balance_error": 0.041666666666666685,
+     "runner_win_rate": 0.4583333333333333,
+     "escape_rate": 0.4583333333333333,
+     "tag_rate": 0.4166666666666667,
+     "timeout_rate": 0.125,
+     "avg_steps": 292.0416666666667,
+     "predicted_error": 0.09404358739071916,
+     "predicted_win_rate": 0.5940435873907192,
+     "gap": -0.05237692072405248,
+     "edits": 13,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 11,
+     "round": 2,
+     "label": "Mansion",
+     "key": "92f1ffcee8638fe848a18b2b794d74cb7c1aef2e",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.25,
+     "avg_steps": 408.2916666666667,
+     "predicted_error": 0.0033003314078804413,
+     "predicted_win_rate": 0.5033003314078804,
+     "gap": 0.12169966859211956,
+     "edits": 40,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 12,
+     "round": 2,
+     "label": "Mansion",
+     "key": "ebde6d2a996839bb6b33f3c107e4fc7a586b057a",
+     "balance_error": 0.20833333333333337,
+     "runner_win_rate": 0.7083333333333334,
+     "escape_rate": 0.7083333333333334,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 383.0,
+     "predicted_error": 0.025893677072452825,
+     "predicted_win_rate": 0.5258936770724528,
+     "gap": 0.18243965626088054,
+     "edits": 14,
+     "attempts": 38,
+     "deterministic": false
+    },
+    {
+     "eval": 13,
+     "round": 2,
+     "label": "Mansion",
+     "key": "02aa23ffdc8e942136df3ae8a2b98e4fc6587898",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 355.2916666666667,
+     "predicted_error": 0.025893677072452825,
+     "predicted_win_rate": 0.5258936770724528,
+     "gap": 0.1407729895942138,
+     "edits": 9,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 14,
+     "round": 2,
+     "label": "Mansion",
+     "key": "e02138ed9af942da3326e47d104d3451daac6fc5",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.625,
+     "escape_rate": 0.625,
+     "tag_rate": 0.2916666666666667,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 295.625,
+     "predicted_error": 0.032172621228796716,
+     "predicted_win_rate": 0.5321726212287967,
+     "gap": 0.09282737877120328,
+     "edits": 7,
+     "attempts": 7,
+     "deterministic": true
+    },
+    {
+     "eval": 15,
+     "round": 2,
+     "label": "Mansion",
+     "key": "95897437fc9c5d5cb028ff2606f9c3fcb81279fb",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 444.2083333333333,
+     "predicted_error": 0.0422097700465941,
+     "predicted_win_rate": 0.5422097700465941,
+     "gap": 0.2077902299534059,
+     "edits": 18,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 16,
+     "round": 2,
+     "label": "Mansion",
+     "key": "6be9e811fb1b7f266e1e040b2bdb1db54d91c308",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.125,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 394.4166666666667,
+     "predicted_error": 0.04962829251278933,
+     "predicted_win_rate": 0.5496282925127893,
+     "gap": 0.1170383741538773,
+     "edits": 11,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 17,
+     "round": 2,
+     "label": "Mansion",
+     "key": "77b09ee3f33c6f2c0a5fb1a92d9e110f17d034b9",
+     "balance_error": 0.25,
+     "runner_win_rate": 0.75,
+     "escape_rate": 0.75,
+     "tag_rate": 0.041666666666666664,
+     "timeout_rate": 0.20833333333333334,
+     "avg_steps": 361.4583333333333,
+     "predicted_error": 0.04962829251278933,
+     "predicted_win_rate": 0.5496282925127893,
+     "gap": 0.20037170748721067,
+     "edits": 14,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 18,
+     "round": 2,
+     "label": "Mansion",
+     "key": "2bdee82236d2e2a6018be93e9ae552166ea44dae",
+     "balance_error": 0.04166666666666663,
+     "runner_win_rate": 0.5416666666666666,
+     "escape_rate": 0.5416666666666666,
+     "tag_rate": 0.16666666666666666,
+     "timeout_rate": 0.2916666666666667,
+     "avg_steps": 422.3333333333333,
+     "predicted_error": 0.05590723666913322,
+     "predicted_win_rate": 0.5559072366691332,
+     "gap": -0.01424057000246659,
+     "edits": 6,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 19,
+     "round": 2,
+     "label": "Mansion",
+     "key": "00ef1363ac5df18ed9248e2351df239d7d088807",
+     "balance_error": 0.16666666666666663,
+     "runner_win_rate": 0.6666666666666666,
+     "escape_rate": 0.6666666666666666,
+     "tag_rate": 0.08333333333333333,
+     "timeout_rate": 0.25,
+     "avg_steps": 426.4583333333333,
+     "predicted_error": 0.05590723666913322,
+     "predicted_win_rate": 0.5559072366691332,
+     "gap": 0.11075942999753341,
+     "edits": 11,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 20,
+     "round": 2,
+     "label": "Foundry",
+     "key": "d9b25a28ae1564a99039d5af0140284f57b3a32d",
+     "balance_error": 0.04166666666666663,
+     "runner_win_rate": 0.5416666666666666,
+     "escape_rate": 0.5416666666666666,
+     "tag_rate": 0.375,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 427.375,
+     "predicted_error": 0.06299085029307394,
+     "predicted_win_rate": 0.43700914970692606,
+     "gap": -0.02132418362640731,
+     "edits": 10,
+     "attempts": 12,
+     "deterministic": false
+    },
+    {
+     "eval": 21,
+     "round": 3,
+     "label": "Foundry",
+     "key": "fe82d8eee454f63f7f0ee0b126c861129aaff08a",
+     "balance_error": 0.0,
+     "runner_win_rate": 0.5,
+     "escape_rate": 0.5,
+     "tag_rate": 0.20833333333333334,
+     "timeout_rate": 0.2916666666666667,
+     "avg_steps": 579.4583333333334,
+     "predicted_error": 0.05559955190514476,
+     "predicted_win_rate": 0.5555995519051448,
+     "gap": -0.05559955190514476,
+     "edits": 2,
+     "attempts": 4,
+     "deterministic": false
+    },
+    {
+     "eval": 22,
+     "round": 3,
+     "label": "random",
+     "key": "a5135dda1fb7a35d97dd3d8497d4987fd616a99e",
+     "balance_error": 0.125,
+     "runner_win_rate": 0.375,
+     "escape_rate": 0.375,
+     "tag_rate": 0.625,
+     "timeout_rate": 0.0,
+     "avg_steps": 172.95833333333334,
+     "predicted_error": 0.07532789093244419,
+     "predicted_win_rate": 0.4246721090675558,
+     "gap": 0.049672109067555814,
+     "edits": 21,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 23,
+     "round": 3,
+     "label": "Foundry",
+     "key": "bfa7cd48adc908cd573491e452f2a724893821e1",
+     "balance_error": 0.08333333333333337,
+     "runner_win_rate": 0.5833333333333334,
+     "escape_rate": 0.5833333333333334,
+     "tag_rate": 0.3333333333333333,
+     "timeout_rate": 0.08333333333333333,
+     "avg_steps": 422.9166666666667,
+     "predicted_error": 0.08323278019838437,
+     "predicted_win_rate": 0.41676721980161563,
+     "gap": 0.00010055313494899965,
+     "edits": 10,
+     "attempts": 12,
+     "deterministic": false
+    },
+    {
+     "eval": 24,
+     "round": 3,
+     "label": "Arena",
+     "key": "b2e88162d8c45292d43cd6c62679dc269856e456",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 16,
+     "attempts": 40,
+     "deterministic": true
+    },
+    {
+     "eval": 25,
+     "round": 3,
+     "label": "Arena",
+     "key": "6ef5d58dda9baa02017873996efbbc53aaa0d3f0",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 14,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 26,
+     "round": 3,
+     "label": "Arena",
+     "key": "292e5794fd7ae031d4b9e827bd2c4f50598a60cb",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 15,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 27,
+     "round": 3,
+     "label": "Arena",
+     "key": "c5347a83882b0e18cb97b4049a5a7c62a4509b8d",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 14,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 28,
+     "round": 3,
+     "label": "Arena",
+     "key": "bb39b73a0668cb775530524709bfbc4d6e40dcd2",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 15,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 29,
+     "round": 3,
+     "label": "Arena",
+     "key": "35f6fb23e66c3b6c1e4bedb010978b3134c4551e",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 14,
+     "attempts": 40,
+     "deterministic": false
+    },
+    {
+     "eval": 30,
+     "round": 3,
+     "label": "Arena",
+     "key": "b91aa3fbfbdc1af9385fc04a19bacaa086451a09",
+     "balance_error": 0.16666666666666669,
+     "runner_win_rate": 0.3333333333333333,
+     "escape_rate": 0.3333333333333333,
+     "tag_rate": 0.5,
+     "timeout_rate": 0.16666666666666666,
+     "avg_steps": 337.75,
+     "predicted_error": 0.09424056505671291,
+     "predicted_win_rate": 0.4057594349432871,
+     "gap": 0.07242610160995377,
+     "edits": 15,
+     "attempts": 40,
+     "deterministic": false
+    }
+   ],
+   "elapsed_s": 1041.5,
+   "episodes": 24,
+   "round_time": 60.0,
+   "seed0": 0,
+   "note": "surrogate-trained PPO (stage B/C): 3 refinement rounds x 1200 episodes, top-10 really evaluated per round, 30 real evaluations total; model editor_seed3.zip"
+  }
+ ],
+ "refinement": [
+  {
+   "seed": 0,
+   "rounds": [
+    {
+     "round": 1,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 10,
+     "harvested": 195,
+     "mean_predicted_error": 0.09344009722133775,
+     "mean_real_error": 0.1875,
+     "mean_gap": 0.09405990277866225,
+     "mean_abs_gap": 0.1056902198938225,
+     "best_real_error": 0.08333333333333331,
+     "rows_added": 10,
+     "dataset_n": 160,
+     "oof_r2_after_refit": 0.6348761025988927,
+     "deterministic_edits": [
+      1,
+      6,
+      0,
+      6,
+      3,
+      9,
+      14,
+      12,
+      5,
+      15,
+      2
+     ],
+     "mean_deterministic_edits": 6.636363636363637,
+     "mean_edits_all": 9.338461538461539,
+     "train_curve_tail": [
+      [
+       1151,
+       1.8239,
+       10,
+       0.263
+      ],
+      [
+       1152,
+       -0.1595,
+       18,
+       0.146
+      ],
+      [
+       1153,
+       -1.5047,
+       7,
+       0.2443
+      ],
+      [
+       1154,
+       1.9124,
+       6,
+       0.2273
+      ],
+      [
+       1155,
+       -0.3089,
+       7,
+       0.4827
+      ],
+      [
+       1156,
+       -0.9898,
+       9,
+       0.229
+      ],
+      [
+       1157,
+       0.0,
+       0,
+       0.4557
+      ],
+      [
+       1158,
+       1.3441,
+       8,
+       0.1188
+      ],
+      [
+       1159,
+       1.8584,
+       12,
+       0.2327
+      ],
+      [
+       1160,
+       1.2976,
+       8,
+       0.3702
+      ],
+      [
+       1161,
+       1.449,
+       11,
+       0.2569
+      ],
+      [
+       1162,
+       1.5505,
+       5,
+       0.2243
+      ],
+      [
+       1163,
+       1.4001,
+       7,
+       0.2573
+      ],
+      [
+       1164,
+       2.1163,
+       12,
+       0.2259
+      ],
+      [
+       1165,
+       0.835,
+       10,
+       0.3198
+      ],
+      [
+       1166,
+       0.506,
+       13,
+       0.3287
+      ],
+      [
+       1167,
+       2.1082,
+       8,
+       0.2345
+      ],
+      [
+       1168,
+       1.5921,
+       6,
+       0.1496
+      ],
+      [
+       1169,
+       0.9964,
+       3,
+       0.1815
+      ],
+      [
+       1170,
+       1.2919,
+       12,
+       0.3708
+      ],
+      [
+       1171,
+       -1.0238,
+       12,
+       0.1962
+      ],
+      [
+       1172,
+       1.0261,
+       4,
+       0.1506
+      ],
+      [
+       1173,
+       1.0982,
+       8,
+       0.1903
+      ],
+      [
+       1174,
+       -0.4189,
+       11,
+       0.1357
+      ],
+      [
+       1175,
+       2.1163,
+       13,
+       0.2259
+      ],
+      [
+       1176,
+       1.7271,
+       7,
+       0.1516
+      ],
+      [
+       1177,
+       -0.4189,
+       10,
+       0.1357
+      ],
+      [
+       1178,
+       0.0,
+       5,
+       0.0938
+      ],
+      [
+       1179,
+       1.5978,
+       9,
+       0.2856
+      ],
+      [
+       1180,
+       2.1019,
+       7,
+       0.2273
+      ],
+      [
+       1181,
+       1.3441,
+       7,
+       0.1188
+      ],
+      [
+       1182,
+       1.164,
+       3,
+       0.1837
+      ],
+      [
+       1183,
+       1.3441,
+       6,
+       0.1188
+      ],
+      [
+       1184,
+       1.1552,
+       3,
+       0.322
+      ],
+      [
+       1185,
+       1.8239,
+       7,
+       0.263
+      ],
+      [
+       1186,
+       -0.2029,
+       17,
+       0.1503
+      ],
+      [
+       1187,
+       -0.2029,
+       4,
+       0.1503
+      ],
+      [
+       1188,
+       1.6164,
+       10,
+       0.1384
+      ],
+      [
+       1189,
+       1.8239,
+       10,
+       0.263
+      ],
+      [
+       1190,
+       1.7723,
+       10,
+       0.2021
+      ],
+      [
+       1191,
+       -1.5047,
+       10,
+       0.2443
+      ],
+      [
+       1192,
+       -0.2158,
+       13,
+       0.1516
+      ],
+      [
+       1193,
+       0.0,
+       7,
+       0.0938
+      ],
+      [
+       1194,
+       1.3131,
+       5,
+       0.3687
+      ],
+      [
+       1195,
+       1.8584,
+       14,
+       0.2327
+      ],
+      [
+       1196,
+       1.0261,
+       7,
+       0.1506
+      ],
+      [
+       1197,
+       0.8893,
+       9,
+       0.41
+      ],
+      [
+       1198,
+       0.268,
+       3,
+       0.3661
+      ],
+      [
+       1199,
+       0.6853,
+       9,
+       0.2316
+      ],
+      [
+       1200,
+       1.5505,
+       10,
+       0.2243
+      ]
+     ],
+     "elapsed_s": 302.6
+    },
+    {
+     "round": 2,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 20,
+     "harvested": 178,
+     "mean_predicted_error": 0.0639991054156327,
+     "mean_real_error": 0.18333333333333332,
+     "mean_gap": 0.11933422791770062,
+     "mean_abs_gap": 0.11933422791770062,
+     "best_real_error": 0.08333333333333331,
+     "rows_added": 10,
+     "dataset_n": 170,
+     "oof_r2_after_refit": 0.6224905281551008,
+     "deterministic_edits": [
+      5,
+      0,
+      10,
+      1,
+      6,
+      7,
+      6,
+      9,
+      11,
+      5,
+      4
+     ],
+     "mean_deterministic_edits": 5.818181818181818,
+     "mean_edits_all": 8.47752808988764,
+     "train_curve_tail": [
+      [
+       1151,
+       1.6409,
+       7,
+       0.2647
+      ],
+      [
+       1152,
+       0.9207,
+       7,
+       0.2097
+      ],
+      [
+       1153,
+       1.2128,
+       10,
+       0.3344
+      ],
+      [
+       1154,
+       2.2166,
+       8,
+       0.2004
+      ],
+      [
+       1155,
+       0.335,
+       10,
+       0.3706
+      ],
+      [
+       1156,
+       1.6409,
+       8,
+       0.2647
+      ],
+      [
+       1157,
+       0.7733,
+       7,
+       0.3951
+      ],
+      [
+       1158,
+       1.457,
+       7,
+       0.3543
+      ],
+      [
+       1159,
+       1.692,
+       7,
+       0.1638
+      ],
+      [
+       1160,
+       2.1105,
+       8,
+       0.064
+      ],
+      [
+       1161,
+       1.9413,
+       12,
+       0.1137
+      ],
+      [
+       1162,
+       1.4406,
+       7,
+       0.2584
+      ],
+      [
+       1163,
+       1.801,
+       13,
+       0.0966
+      ],
+      [
+       1164,
+       1.9413,
+       12,
+       0.1137
+      ],
+      [
+       1165,
+       1.9413,
+       12,
+       0.1137
+      ],
+      [
+       1166,
+       0.8514,
+       8,
+       0.3873
+      ],
+      [
+       1167,
+       2.1105,
+       7,
+       0.064
+      ],
+      [
+       1168,
+       1.5551,
+       8,
+       0.33
+      ],
+      [
+       1169,
+       0.7733,
+       8,
+       0.3951
+      ],
+      [
+       1170,
+       -0.6871,
+       9,
+       0.1793
+      ],
+      [
+       1171,
+       2.0654,
+       11,
+       0.1316
+      ],
+      [
+       1172,
+       1.6409,
+       5,
+       0.2647
+      ],
+      [
+       1173,
+       1.5936,
+       8,
+       0.2694
+      ],
+      [
+       1174,
+       1.6409,
+       6,
+       0.2647
+      ],
+      [
+       1175,
+       1.5184,
+       14,
+       0.3086
+      ],
+      [
+       1176,
+       1.1398,
+       4,
+       0.2403
+      ],
+      [
+       1177,
+       0.0483,
+       4,
+       0.1088
+      ],
+      [
+       1178,
+       1.2929,
+       6,
+       0.2549
+      ],
+      [
+       1179,
+       0.5964,
+       7,
+       0.3294
+      ],
+      [
+       1180,
+       1.8189,
+       11,
+       0.126
+      ],
+      [
+       1181,
+       1.6409,
+       9,
+       0.2647
+      ],
+      [
+       1182,
+       0.0483,
+       5,
+       0.1088
+      ],
+      [
+       1183,
+       1.571,
+       7,
+       0.2752
+      ],
+      [
+       1184,
+       0.0226,
+       6,
+       0.1114
+      ],
+      [
+       1185,
+       1.2929,
+       11,
+       0.2549
+      ],
+      [
+       1186,
+       -0.1425,
+       18,
+       0.1248
+      ],
+      [
+       1187,
+       1.9926,
+       9,
+       0.1086
+      ],
+      [
+       1188,
+       1.5936,
+       11,
+       0.2694
+      ],
+      [
+       1189,
+       2.1105,
+       5,
+       0.064
+      ],
+      [
+       1190,
+       0.0,
+       5,
+       0.1136
+      ],
+      [
+       1191,
+       1.6812,
+       9,
+       0.2606
+      ],
+      [
+       1192,
+       1.9413,
+       9,
+       0.1137
+      ],
+      [
+       1193,
+       2.1561,
+       11,
+       0.1226
+      ],
+      [
+       1194,
+       0.3125,
+       14,
+       0.4513
+      ],
+      [
+       1195,
+       1.8417,
+       9,
+       0.0909
+      ],
+      [
+       1196,
+       0.7733,
+       9,
+       0.3951
+      ],
+      [
+       1197,
+       1.7293,
+       6,
+       0.2295
+      ],
+      [
+       1198,
+       -0.1425,
+       12,
+       0.1248
+      ],
+      [
+       1199,
+       1.5586,
+       8,
+       0.152
+      ],
+      [
+       1200,
+       0.0,
+       2,
+       0.1136
+      ]
+     ],
+     "elapsed_s": 728.6
+    },
+    {
+     "round": 3,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 30,
+     "harvested": 118,
+     "mean_predicted_error": 0.11029218125329084,
+     "mean_real_error": 0.175,
+     "mean_gap": 0.06470781874670917,
+     "mean_abs_gap": 0.06470781874670917,
+     "best_real_error": 0.08333333333333331,
+     "rows_added": 8,
+     "dataset_n": 178,
+     "oof_r2_after_refit": 0.6484743739400812,
+     "deterministic_edits": [
+      0,
+      0,
+      7,
+      7,
+      7,
+      8,
+      8,
+      7,
+      8,
+      5,
+      10
+     ],
+     "mean_deterministic_edits": 6.090909090909091,
+     "mean_edits_all": 7.02542372881356,
+     "train_curve_tail": [
+      [
+       1151,
+       -0.0924,
+       2,
+       0.1242
+      ],
+      [
+       1152,
+       2.0299,
+       7,
+       0.2333
+      ],
+      [
+       1153,
+       1.9113,
+       9,
+       0.2423
+      ],
+      [
+       1154,
+       1.1196,
+       10,
+       0.1405
+      ],
+      [
+       1155,
+       -0.8133,
+       3,
+       0.2016
+      ],
+      [
+       1156,
+       1.4612,
+       10,
+       0.1504
+      ],
+      [
+       1157,
+       0.3487,
+       9,
+       0.4651
+      ],
+      [
+       1158,
+       1.4351,
+       9,
+       0.1215
+      ],
+      [
+       1159,
+       2.0299,
+       7,
+       0.2333
+      ],
+      [
+       1160,
+       1.1826,
+       6,
+       0.3654
+      ],
+      [
+       1161,
+       1.2676,
+       8,
+       0.1895
+      ],
+      [
+       1162,
+       0.0,
+       0,
+       0.1203
+      ],
+      [
+       1163,
+       1.4351,
+       8,
+       0.1215
+      ],
+      [
+       1164,
+       1.4351,
+       10,
+       0.1215
+      ],
+      [
+       1165,
+       -0.0924,
+       1,
+       0.1242
+      ],
+      [
+       1166,
+       2.0121,
+       11,
+       0.2323
+      ],
+      [
+       1167,
+       0.4945,
+       7,
+       0.4357
+      ],
+      [
+       1168,
+       0.0,
+       0,
+       0.1203
+      ],
+      [
+       1169,
+       1.9381,
+       8,
+       0.2397
+      ],
+      [
+       1170,
+       0.9313,
+       8,
+       0.328
+      ],
+      [
+       1171,
+       -0.0924,
+       2,
+       0.1242
+      ],
+      [
+       1172,
+       1.91,
+       10,
+       0.1936
+      ],
+      [
+       1173,
+       2.2378,
+       7,
+       0.1274
+      ],
+      [
+       1174,
+       1.4048,
+       14,
+       0.2652
+      ],
+      [
+       1175,
+       1.6825,
+       7,
+       0.148
+      ],
+      [
+       1176,
+       1.4351,
+       9,
+       0.1215
+      ],
+      [
+       1177,
+       2.0631,
+       9,
+       0.1083
+      ],
+      [
+       1178,
+       2.2378,
+       8,
+       0.1274
+      ],
+      [
+       1179,
+       2.0299,
+       7,
+       0.2333
+      ],
+      [
+       1180,
+       2.0299,
+       7,
+       0.2333
+      ],
+      [
+       1181,
+       0.058,
+       10,
+       0.4942
+      ],
+      [
+       1182,
+       -0.5786,
+       4,
+       0.1728
+      ],
+      [
+       1183,
+       0.0,
+       0,
+       0.1149
+      ],
+      [
+       1184,
+       1.6825,
+       6,
+       0.148
+      ],
+      [
+       1185,
+       1.1188,
+       5,
+       0.3718
+      ],
+      [
+       1186,
+       1.4075,
+       10,
+       0.2763
+      ],
+      [
+       1187,
+       0.0,
+       1,
+       0.1203
+      ],
+      [
+       1188,
+       1.1188,
+       5,
+       0.3718
+      ],
+      [
+       1189,
+       1.9381,
+       8,
+       0.2397
+      ],
+      [
+       1190,
+       1.1979,
+       8,
+       0.2793
+      ],
+      [
+       1191,
+       2.0121,
+       9,
+       0.2323
+      ],
+      [
+       1192,
+       2.2378,
+       7,
+       0.1274
+      ],
+      [
+       1193,
+       1.3069,
+       14,
+       0.3352
+      ],
+      [
+       1194,
+       0.6745,
+       10,
+       0.3401
+      ],
+      [
+       1195,
+       1.6825,
+       8,
+       0.148
+      ],
+      [
+       1196,
+       -0.5593,
+       2,
+       0.1708
+      ],
+      [
+       1197,
+       1.6825,
+       7,
+       0.148
+      ],
+      [
+       1198,
+       2.009,
+       7,
+       0.232
+      ],
+      [
+       1199,
+       1.91,
+       9,
+       0.1936
+      ],
+      [
+       1200,
+       1.595,
+       6,
+       0.3355
+      ]
+     ],
+     "elapsed_s": 1044.1
+    }
+   ],
+   "oof_by_round": [
+    {
+     "round": 0,
+     "n": 150,
+     "oof_r2": 0.4923008189132184,
+     "policy_rows": 0
+    },
+    {
+     "round": 1,
+     "n": 160,
+     "oof_r2": 0.6348761025988927,
+     "policy_rows": 10
+    },
+    {
+     "round": 2,
+     "n": 170,
+     "oof_r2": 0.6224905281551008,
+     "policy_rows": 20
+    },
+    {
+     "round": 3,
+     "n": 178,
+     "oof_r2": 0.6484743739400812,
+     "policy_rows": 28
+    }
+   ],
+   "real_evaluations": 30,
+   "seed_dataset_n": 150
+  },
+  {
+   "seed": 1,
+   "rounds": [
+    {
+     "round": 1,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 10,
+     "harvested": 190,
+     "mean_predicted_error": 0.04620282624475353,
+     "mean_real_error": 0.325,
+     "mean_gap": 0.2787971737552465,
+     "mean_abs_gap": 0.2787971737552465,
+     "best_real_error": 0.125,
+     "rows_added": 10,
+     "dataset_n": 160,
+     "oof_r2_after_refit": 0.558203357224613,
+     "deterministic_edits": [
+      0,
+      3,
+      4,
+      7,
+      3,
+      1,
+      2,
+      9,
+      10,
+      1,
+      4
+     ],
+     "mean_deterministic_edits": 4.0,
+     "mean_edits_all": 9.373684210526315,
+     "train_curve_tail": [
+      [
+       1151,
+       1.8534,
+       10,
+       0.194
+      ],
+      [
+       1152,
+       1.9939,
+       9,
+       0.1917
+      ],
+      [
+       1153,
+       -1.0332,
+       11,
+       0.2334
+      ],
+      [
+       1154,
+       1.994,
+       8,
+       0.1007
+      ],
+      [
+       1155,
+       -0.21,
+       11,
+       0.1148
+      ],
+      [
+       1156,
+       -1.0332,
+       9,
+       0.2334
+      ],
+      [
+       1157,
+       -0.7261,
+       4,
+       0.4147
+      ],
+      [
+       1158,
+       1.926,
+       7,
+       0.226
+      ],
+      [
+       1159,
+       -1.5047,
+       14,
+       0.2443
+      ],
+      [
+       1160,
+       1.7464,
+       15,
+       0.2439
+      ],
+      [
+       1161,
+       1.7464,
+       13,
+       0.2439
+      ],
+      [
+       1162,
+       2.9685,
+       10,
+       0.0453
+      ],
+      [
+       1163,
+       2.0752,
+       7,
+       0.1718
+      ],
+      [
+       1164,
+       2.0062,
+       13,
+       0.2447
+      ],
+      [
+       1165,
+       0.3842,
+       15,
+       0.2148
+      ],
+      [
+       1166,
+       1.296,
+       7,
+       0.2497
+      ],
+      [
+       1167,
+       1.5978,
+       9,
+       0.2856
+      ],
+      [
+       1168,
+       2.0752,
+       7,
+       0.1718
+      ],
+      [
+       1169,
+       -0.0403,
+       12,
+       0.4781
+      ],
+      [
+       1170,
+       1.6946,
+       12,
+       0.2681
+      ],
+      [
+       1171,
+       1.8584,
+       10,
+       0.2327
+      ],
+      [
+       1172,
+       1.7188,
+       10,
+       0.1703
+      ],
+      [
+       1173,
+       1.0531,
+       7,
+       0.1479
+      ],
+      [
+       1174,
+       1.0783,
+       11,
+       0.1626
+      ],
+      [
+       1175,
+       1.1643,
+       5,
+       0.3693
+      ],
+      [
+       1176,
+       2.0479,
+       9,
+       0.2327
+      ],
+      [
+       1177,
+       0.3408,
+       9,
+       0.096
+      ],
+      [
+       1178,
+       -0.21,
+       16,
+       0.1148
+      ],
+      [
+       1179,
+       0.0293,
+       12,
+       0.2503
+      ],
+      [
+       1180,
+       1.4569,
+       5,
+       0.2336
+      ],
+      [
+       1181,
+       0.9321,
+       12,
+       0.3254
+      ],
+      [
+       1182,
+       0.3842,
+       9,
+       0.0916
+      ],
+      [
+       1183,
+       1.7318,
+       11,
+       0.1269
+      ],
+      [
+       1184,
+       1.0307,
+       8,
+       0.2762
+      ],
+      [
+       1185,
+       -1.0332,
+       9,
+       0.2334
+      ],
+      [
+       1186,
+       1.0982,
+       9,
+       0.1903
+      ],
+      [
+       1187,
+       1.4913,
+       12,
+       0.151
+      ],
+      [
+       1188,
+       0.6945,
+       9,
+       0.3491
+      ],
+      [
+       1189,
+       0.0,
+       10,
+       0.5
+      ],
+      [
+       1190,
+       0.3983,
+       7,
+       0.2134
+      ],
+      [
+       1191,
+       3.2553,
+       9,
+       0.0166
+      ],
+      [
+       1192,
+       1.8239,
+       12,
+       0.263
+      ],
+      [
+       1193,
+       -1.0332,
+       12,
+       0.2334
+      ],
+      [
+       1194,
+       1.6164,
+       13,
+       0.1384
+      ],
+      [
+       1195,
+       1.4916,
+       9,
+       0.1412
+      ],
+      [
+       1196,
+       0.878,
+       11,
+       0.3308
+      ],
+      [
+       1197,
+       0.3842,
+       13,
+       0.0916
+      ],
+      [
+       1198,
+       0.267,
+       7,
+       0.3154
+      ],
+      [
+       1199,
+       -0.4332,
+       12,
+       0.1734
+      ],
+      [
+       1200,
+       0.0,
+       0,
+       0.3969
+      ]
+     ],
+     "elapsed_s": 421.7
+    },
+    {
+     "round": 2,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 20,
+     "harvested": 191,
+     "mean_predicted_error": 0.0698396017210701,
+     "mean_real_error": 0.07083333333333333,
+     "mean_gap": 0.0009937316122632434,
+     "mean_abs_gap": 0.061001267493801595,
+     "best_real_error": 0.0,
+     "rows_added": 10,
+     "dataset_n": 170,
+     "oof_r2_after_refit": 0.5589064511246837,
+     "deterministic_edits": [
+      13,
+      39,
+      13,
+      7,
+      29,
+      15,
+      40,
+      37,
+      23,
+      8,
+      13
+     ],
+     "mean_deterministic_edits": 21.545454545454547,
+     "mean_edits_all": 22.56544502617801,
+     "train_curve_tail": [
+      [
+       1151,
+       1.0697,
+       15,
+       0.3159
+      ],
+      [
+       1152,
+       0.9774,
+       18,
+       0.3251
+      ],
+      [
+       1153,
+       -0.3895,
+       29,
+       0.1604
+      ],
+      [
+       1154,
+       0.9999,
+       18,
+       0.1958
+      ],
+      [
+       1155,
+       0.1976,
+       24,
+       0.0752
+      ],
+      [
+       1156,
+       0.8854,
+       19,
+       0.3327
+      ],
+      [
+       1157,
+       0.7962,
+       32,
+       0.4204
+      ],
+      [
+       1158,
+       -1.1283,
+       29,
+       0.2078
+      ],
+      [
+       1159,
+       0.624,
+       19,
+       0.3016
+      ],
+      [
+       1160,
+       0.861,
+       36,
+       0.3368
+      ],
+      [
+       1161,
+       -0.9009,
+       31,
+       0.185
+      ],
+      [
+       1162,
+       1.2244,
+       26,
+       0.2547
+      ],
+      [
+       1163,
+       1.1837,
+       16,
+       0.1774
+      ],
+      [
+       1164,
+       0.7483,
+       27,
+       0.394
+      ],
+      [
+       1165,
+       0.2631,
+       27,
+       0.0951
+      ],
+      [
+       1166,
+       0.4158,
+       22,
+       0.4286
+      ],
+      [
+       1167,
+       1.3367,
+       17,
+       0.3663
+      ],
+      [
+       1168,
+       0.5239,
+       17,
+       0.415
+      ],
+      [
+       1169,
+       -0.0298,
+       26,
+       0.0979
+      ],
+      [
+       1170,
+       0.913,
+       15,
+       0.2045
+      ],
+      [
+       1171,
+       0.0687,
+       40,
+       0.4533
+      ],
+      [
+       1172,
+       0.9452,
+       27,
+       0.3283
+      ],
+      [
+       1173,
+       1.0895,
+       22,
+       0.1869
+      ],
+      [
+       1174,
+       -1.5936,
+       20,
+       0.2808
+      ],
+      [
+       1175,
+       1.5461,
+       19,
+       0.1137
+      ],
+      [
+       1176,
+       -0.4111,
+       33,
+       0.1625
+      ],
+      [
+       1177,
+       1.0886,
+       33,
+       0.2206
+      ],
+      [
+       1178,
+       0.596,
+       13,
+       0.4404
+      ],
+      [
+       1179,
+       0.899,
+       23,
+       0.3313
+      ],
+      [
+       1180,
+       1.2244,
+       33,
+       0.2547
+      ],
+      [
+       1181,
+       1.1312,
+       23,
+       0.1827
+      ],
+      [
+       1182,
+       1.158,
+       19,
+       0.18
+      ],
+      [
+       1183,
+       -1.5726,
+       27,
+       0.2787
+      ],
+      [
+       1184,
+       1.1312,
+       21,
+       0.1827
+      ],
+      [
+       1185,
+       0.624,
+       21,
+       0.3016
+      ],
+      [
+       1186,
+       -1.1283,
+       21,
+       0.2078
+      ],
+      [
+       1187,
+       1.4158,
+       17,
+       0.1267
+      ],
+      [
+       1188,
+       0.8873,
+       16,
+       0.3341
+      ],
+      [
+       1189,
+       1.1312,
+       10,
+       0.1827
+      ],
+      [
+       1190,
+       0.6241,
+       35,
+       0.3798
+      ],
+      [
+       1191,
+       1.7134,
+       26,
+       0.1963
+      ],
+      [
+       1192,
+       0.899,
+       23,
+       0.3313
+      ],
+      [
+       1193,
+       0.7483,
+       32,
+       0.394
+      ],
+      [
+       1194,
+       1.1312,
+       18,
+       0.1827
+      ],
+      [
+       1195,
+       0.3729,
+       32,
+       0.2289
+      ],
+      [
+       1196,
+       -1.3604,
+       20,
+       0.2575
+      ],
+      [
+       1197,
+       1.2515,
+       28,
+       0.252
+      ],
+      [
+       1198,
+       -0.3895,
+       25,
+       0.1604
+      ],
+      [
+       1199,
+       -0.3895,
+       34,
+       0.1604
+      ],
+      [
+       1200,
+       -1.488,
+       37,
+       0.2702
+      ]
+     ],
+     "elapsed_s": 1069.6
+    },
+    {
+     "round": 3,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 30,
+     "harvested": 181,
+     "mean_predicted_error": 0.01626416436043075,
+     "mean_real_error": 0.12083333333333332,
+     "mean_gap": 0.10456916897290255,
+     "mean_abs_gap": 0.10553363481932236,
+     "best_real_error": 0.0,
+     "rows_added": 10,
+     "dataset_n": 180,
+     "oof_r2_after_refit": 0.6931545319228752,
+     "deterministic_edits": [
+      40,
+      11,
+      0,
+      8,
+      9,
+      14,
+      7,
+      12,
+      12,
+      14,
+      40
+     ],
+     "mean_deterministic_edits": 15.181818181818182,
+     "mean_edits_all": 16.39779005524862,
+     "train_curve_tail": [
+      [
+       1151,
+       2.0367,
+       11,
+       0.1742
+      ],
+      [
+       1152,
+       0.5992,
+       16,
+       0.4201
+      ],
+      [
+       1153,
+       1.3885,
+       16,
+       0.2331
+      ],
+      [
+       1154,
+       0.135,
+       26,
+       0.2697
+      ],
+      [
+       1155,
+       1.2456,
+       22,
+       0.2971
+      ],
+      [
+       1156,
+       0.0,
+       34,
+       0.0967
+      ],
+      [
+       1157,
+       1.792,
+       10,
+       0.2164
+      ],
+      [
+       1158,
+       1.06,
+       23,
+       0.3006
+      ],
+      [
+       1159,
+       0.8095,
+       22,
+       0.419
+      ],
+      [
+       1160,
+       0.6314,
+       19,
+       0.0335
+      ],
+      [
+       1161,
+       0.0,
+       8,
+       0.0967
+      ],
+      [
+       1162,
+       1.2509,
+       12,
+       0.2815
+      ],
+      [
+       1163,
+       -1.2329,
+       36,
+       0.22
+      ],
+      [
+       1164,
+       1.7053,
+       12,
+       0.1267
+      ],
+      [
+       1165,
+       1.8216,
+       11,
+       0.1242
+      ],
+      [
+       1166,
+       2.0367,
+       10,
+       0.1742
+      ],
+      [
+       1167,
+       1.6419,
+       26,
+       0.1054
+      ],
+      [
+       1168,
+       1.6596,
+       29,
+       0.1385
+      ],
+      [
+       1169,
+       1.7053,
+       15,
+       0.1267
+      ],
+      [
+       1170,
+       1.3052,
+       18,
+       0.2911
+      ],
+      [
+       1171,
+       2.2215,
+       25,
+       0.0611
+      ],
+      [
+       1172,
+       1.2456,
+       21,
+       0.2971
+      ],
+      [
+       1173,
+       0.0,
+       2,
+       0.0967
+      ],
+      [
+       1174,
+       1.2902,
+       17,
+       0.1542
+      ],
+      [
+       1175,
+       1.2509,
+       11,
+       0.2815
+      ],
+      [
+       1176,
+       1.3646,
+       18,
+       0.2702
+      ],
+      [
+       1177,
+       1.2509,
+       15,
+       0.2815
+      ],
+      [
+       1178,
+       1.2456,
+       17,
+       0.2971
+      ],
+      [
+       1179,
+       -0.3736,
+       17,
+       0.134
+      ],
+      [
+       1180,
+       1.2509,
+       13,
+       0.2815
+      ],
+      [
+       1181,
+       -0.4115,
+       21,
+       0.1378
+      ],
+      [
+       1182,
+       1.2902,
+       25,
+       0.1542
+      ],
+      [
+       1183,
+       0.2365,
+       32,
+       0.0667
+      ],
+      [
+       1184,
+       2.1516,
+       13,
+       0.068
+      ],
+      [
+       1185,
+       1.7496,
+       19,
+       0.2206
+      ],
+      [
+       1186,
+       0.2625,
+       34,
+       0.0641
+      ],
+      [
+       1187,
+       1.792,
+       13,
+       0.2164
+      ],
+      [
+       1188,
+       1.4884,
+       13,
+       0.1483
+      ],
+      [
+       1189,
+       0.6134,
+       39,
+       0.029
+      ],
+      [
+       1190,
+       0.038,
+       5,
+       0.0929
+      ],
+      [
+       1191,
+       0.7341,
+       37,
+       0.0169
+      ],
+      [
+       1192,
+       0.4722,
+       14,
+       0.4219
+      ],
+      [
+       1193,
+       1.4005,
+       7,
+       0.2555
+      ],
+      [
+       1194,
+       -0.2641,
+       21,
+       0.1231
+      ],
+      [
+       1195,
+       1.6681,
+       20,
+       0.3122
+      ],
+      [
+       1196,
+       0.5734,
+       13,
+       0.4201
+      ],
+      [
+       1197,
+       0.7272,
+       23,
+       0.4062
+      ],
+      [
+       1198,
+       1.7496,
+       21,
+       0.2206
+      ],
+      [
+       1199,
+       1.3792,
+       11,
+       0.2576
+      ],
+      [
+       1200,
+       1.3052,
+       12,
+       0.2911
+      ]
+     ],
+     "elapsed_s": 1661.9
+    }
+   ],
+   "oof_by_round": [
+    {
+     "round": 0,
+     "n": 150,
+     "oof_r2": 0.4923008189132184,
+     "policy_rows": 0
+    },
+    {
+     "round": 1,
+     "n": 160,
+     "oof_r2": 0.558203357224613,
+     "policy_rows": 10
+    },
+    {
+     "round": 2,
+     "n": 170,
+     "oof_r2": 0.5589064511246837,
+     "policy_rows": 20
+    },
+    {
+     "round": 3,
+     "n": 180,
+     "oof_r2": 0.6931545319228752,
+     "policy_rows": 30
+    }
+   ],
+   "real_evaluations": 30,
+   "seed_dataset_n": 150
+  },
+  {
+   "seed": 2,
+   "rounds": [
+    {
+     "round": 1,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 10,
+     "harvested": 197,
+     "mean_predicted_error": 0.03450850658337003,
+     "mean_real_error": 0.2416666666666667,
+     "mean_gap": 0.20715816008329663,
+     "mean_abs_gap": 0.20925461694839478,
+     "best_real_error": 0.08333333333333331,
+     "rows_added": 10,
+     "dataset_n": 160,
+     "oof_r2_after_refit": 0.4866584760934646,
+     "deterministic_edits": [
+      1,
+      1,
+      5,
+      21,
+      11,
+      21,
+      4,
+      2,
+      27,
+      29,
+      10
+     ],
+     "mean_deterministic_edits": 12.0,
+     "mean_edits_all": 24.071065989847718,
+     "train_curve_tail": [
+      [
+       1151,
+       -0.381,
+       10,
+       0.3802
+      ],
+      [
+       1152,
+       -0.6395,
+       20,
+       0.1578
+      ],
+      [
+       1153,
+       1.2557,
+       22,
+       0.1276
+      ],
+      [
+       1154,
+       -1.0238,
+       11,
+       0.1962
+      ],
+      [
+       1155,
+       1.1932,
+       22,
+       0.3182
+      ],
+      [
+       1156,
+       1.8239,
+       29,
+       0.263
+      ],
+      [
+       1157,
+       0.8087,
+       36,
+       0.2984
+      ],
+      [
+       1158,
+       0.0813,
+       6,
+       0.3605
+      ],
+      [
+       1159,
+       1.8239,
+       31,
+       0.263
+      ],
+      [
+       1160,
+       2.0779,
+       32,
+       0.2297
+      ],
+      [
+       1161,
+       -0.4318,
+       28,
+       0.137
+      ],
+      [
+       1162,
+       0.2723,
+       9,
+       0.3696
+      ],
+      [
+       1163,
+       1.874,
+       33,
+       0.2312
+      ],
+      [
+       1164,
+       0.5626,
+       31,
+       0.2438
+      ],
+      [
+       1165,
+       0.6635,
+       21,
+       0.2758
+      ],
+      [
+       1166,
+       0.2958,
+       27,
+       0.2236
+      ],
+      [
+       1167,
+       0.2144,
+       24,
+       0.2318
+      ],
+      [
+       1168,
+       1.3679,
+       14,
+       0.2084
+      ],
+      [
+       1169,
+       0.6306,
+       28,
+       0.2791
+      ],
+      [
+       1170,
+       0.5276,
+       32,
+       0.0411
+      ],
+      [
+       1171,
+       0.8,
+       30,
+       0.3368
+      ],
+      [
+       1172,
+       0.237,
+       22,
+       0.2295
+      ],
+      [
+       1173,
+       1.5075,
+       24,
+       0.1493
+      ],
+      [
+       1174,
+       1.3265,
+       17,
+       0.2859
+      ],
+      [
+       1175,
+       1.5876,
+       30,
+       0.1599
+      ],
+      [
+       1176,
+       -0.4318,
+       25,
+       0.137
+      ],
+      [
+       1177,
+       0.0,
+       20,
+       0.13
+      ],
+      [
+       1178,
+       0.7746,
+       35,
+       0.3018
+      ],
+      [
+       1179,
+       1.1768,
+       25,
+       0.3198
+      ],
+      [
+       1180,
+       0.8386,
+       20,
+       0.3441
+      ],
+      [
+       1181,
+       -0.3241,
+       27,
+       0.3745
+      ],
+      [
+       1182,
+       -0.0222,
+       18,
+       0.1323
+      ],
+      [
+       1183,
+       1.3275,
+       20,
+       0.2858
+      ],
+      [
+       1184,
+       1.9659,
+       28,
+       0.2409
+      ],
+      [
+       1185,
+       1.0277,
+       31,
+       0.3158
+      ],
+      [
+       1186,
+       0.5118,
+       10,
+       0.2395
+      ],
+      [
+       1187,
+       0.5755,
+       31,
+       0.0363
+      ],
+      [
+       1188,
+       0.9378,
+       30,
+       0.1594
+      ],
+      [
+       1189,
+       1.5013,
+       17,
+       0.1311
+      ],
+      [
+       1190,
+       -0.381,
+       14,
+       0.3802
+      ],
+      [
+       1191,
+       0.7774,
+       35,
+       0.3016
+      ],
+      [
+       1192,
+       1.9124,
+       32,
+       0.2273
+      ],
+      [
+       1193,
+       0.9011,
+       27,
+       0.2892
+      ],
+      [
+       1194,
+       1.8532,
+       37,
+       0.194
+      ],
+      [
+       1195,
+       1.8219,
+       21,
+       0.1971
+      ],
+      [
+       1196,
+       1.0239,
+       20,
+       0.3351
+      ],
+      [
+       1197,
+       1.5881,
+       8,
+       0.2665
+      ],
+      [
+       1198,
+       0.8087,
+       33,
+       0.2984
+      ],
+      [
+       1199,
+       2.0043,
+       34,
+       0.2371
+      ],
+      [
+       1200,
+       0.7774,
+       27,
+       0.3016
+      ]
+     ],
+     "elapsed_s": 631.0
+    },
+    {
+     "round": 2,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 20,
+     "harvested": 198,
+     "mean_predicted_error": 0.0020388786029558125,
+     "mean_real_error": 0.15833333333333335,
+     "mean_gap": 0.15629445473037754,
+     "mean_abs_gap": 0.15641030913155898,
+     "best_real_error": 0.0,
+     "rows_added": 10,
+     "dataset_n": 170,
+     "oof_r2_after_refit": 0.6266224999064554,
+     "deterministic_edits": [
+      40,
+      40,
+      28,
+      25,
+      40,
+      14,
+      1,
+      17,
+      18,
+      14,
+      5
+     ],
+     "mean_deterministic_edits": 22.0,
+     "mean_edits_all": 28.13131313131313,
+     "train_curve_tail": [
+      [
+       1151,
+       1.3603,
+       23,
+       0.2897
+      ],
+      [
+       1152,
+       1.2166,
+       40,
+       0.2553
+      ],
+      [
+       1153,
+       1.6019,
+       27,
+       0.2656
+      ],
+      [
+       1154,
+       0.8969,
+       16,
+       0.3556
+      ],
+      [
+       1155,
+       1.6747,
+       32,
+       0.2779
+      ],
+      [
+       1156,
+       1.8419,
+       38,
+       0.1031
+      ],
+      [
+       1157,
+       1.6747,
+       27,
+       0.2779
+      ],
+      [
+       1158,
+       1.1554,
+       30,
+       0.3488
+      ],
+      [
+       1159,
+       -0.2477,
+       34,
+       0.1152
+      ],
+      [
+       1160,
+       1.6581,
+       32,
+       0.26
+      ],
+      [
+       1161,
+       -0.0069,
+       35,
+       0.083
+      ],
+      [
+       1162,
+       0.3066,
+       38,
+       0.0598
+      ],
+      [
+       1163,
+       0.4417,
+       40,
+       0.2305
+      ],
+      [
+       1164,
+       1.2166,
+       40,
+       0.2553
+      ],
+      [
+       1165,
+       1.3041,
+       39,
+       0.2954
+      ],
+      [
+       1166,
+       0.361,
+       34,
+       0.1973
+      ],
+      [
+       1167,
+       1.5559,
+       21,
+       0.2897
+      ],
+      [
+       1168,
+       0.0278,
+       30,
+       0.3467
+      ],
+      [
+       1169,
+       1.0169,
+       24,
+       0.2902
+      ],
+      [
+       1170,
+       1.0288,
+       24,
+       0.3751
+      ],
+      [
+       1171,
+       0.4324,
+       26,
+       0.2619
+      ],
+      [
+       1172,
+       0.7555,
+       35,
+       0.3014
+      ],
+      [
+       1173,
+       -0.3866,
+       32,
+       0.3882
+      ],
+      [
+       1174,
+       2.1456,
+       19,
+       0.2308
+      ],
+      [
+       1175,
+       1.1554,
+       26,
+       0.3488
+      ],
+      [
+       1176,
+       1.5325,
+       27,
+       0.2731
+      ],
+      [
+       1177,
+       1.1709,
+       35,
+       0.2598
+      ],
+      [
+       1178,
+       1.7173,
+       30,
+       0.1533
+      ],
+      [
+       1179,
+       0.7555,
+       28,
+       0.3014
+      ],
+      [
+       1180,
+       0.3717,
+       33,
+       0.3123
+      ],
+      [
+       1181,
+       0.3318,
+       37,
+       0.0573
+      ],
+      [
+       1182,
+       0.0656,
+       33,
+       0.2269
+      ],
+      [
+       1183,
+       0.4412,
+       18,
+       0.2701
+      ],
+      [
+       1184,
+       0.5199,
+       33,
+       0.0303
+      ],
+      [
+       1185,
+       0.3318,
+       39,
+       0.0573
+      ],
+      [
+       1186,
+       1.6581,
+       30,
+       0.26
+      ],
+      [
+       1187,
+       0.0114,
+       35,
+       0.472
+      ],
+      [
+       1188,
+       0.2384,
+       25,
+       0.3257
+      ],
+      [
+       1189,
+       1.3694,
+       27,
+       0.24
+      ],
+      [
+       1190,
+       -0.2895,
+       27,
+       0.3784
+      ],
+      [
+       1191,
+       0.8171,
+       40,
+       0.0006
+      ],
+      [
+       1192,
+       1.3782,
+       11,
+       0.3622
+      ],
+      [
+       1193,
+       0.5473,
+       23,
+       0.2504
+      ],
+      [
+       1194,
+       0.9412,
+       36,
+       0.1701
+      ],
+      [
+       1195,
+       0.8171,
+       39,
+       0.0006
+      ],
+      [
+       1196,
+       1.1554,
+       27,
+       0.3488
+      ],
+      [
+       1197,
+       1.124,
+       37,
+       0.1635
+      ],
+      [
+       1198,
+       1.2166,
+       38,
+       0.2553
+      ],
+      [
+       1199,
+       0.3936,
+       20,
+       0.2657
+      ],
+      [
+       1200,
+       0.6908,
+       30,
+       0.1644
+      ]
+     ],
+     "elapsed_s": 1081.4
+    },
+    {
+     "round": 3,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 30,
+     "harvested": 159,
+     "mean_predicted_error": 0.03910693668945638,
+     "mean_real_error": 0.14583333333333331,
+     "mean_gap": 0.10672639664387695,
+     "mean_abs_gap": 0.10760251136424329,
+     "best_real_error": 0.0,
+     "rows_added": 10,
+     "dataset_n": 180,
+     "oof_r2_after_refit": 0.6909414911632066,
+     "deterministic_edits": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      39,
+      40
+     ],
+     "mean_deterministic_edits": 39.90909090909091,
+     "mean_edits_all": 32.16981132075472,
+     "train_curve_tail": [
+      [
+       1151,
+       0.9233,
+       39,
+       0.0206
+      ],
+      [
+       1152,
+       1.6241,
+       25,
+       0.2612
+      ],
+      [
+       1153,
+       2.189,
+       40,
+       0.1116
+      ],
+      [
+       1154,
+       1.6534,
+       39,
+       0.1433
+      ],
+      [
+       1155,
+       1.4701,
+       31,
+       0.2766
+      ],
+      [
+       1156,
+       0.1247,
+       11,
+       0.2594
+      ],
+      [
+       1157,
+       1.6245,
+       29,
+       0.3266
+      ],
+      [
+       1158,
+       1.692,
+       26,
+       0.3199
+      ],
+      [
+       1159,
+       0.2848,
+       5,
+       0.3911
+      ],
+      [
+       1160,
+       0.8785,
+       40,
+       0.2208
+      ],
+      [
+       1161,
+       0.7837,
+       40,
+       0.0346
+      ],
+      [
+       1162,
+       1.7521,
+       38,
+       0.2484
+      ],
+      [
+       1163,
+       1.4645,
+       38,
+       0.2772
+      ],
+      [
+       1164,
+       1.692,
+       16,
+       0.3199
+      ],
+      [
+       1165,
+       0.3797,
+       2,
+       0.3801
+      ],
+      [
+       1166,
+       0.7573,
+       39,
+       0.1961
+      ],
+      [
+       1167,
+       0.0,
+       40,
+       0.4846
+      ],
+      [
+       1168,
+       0.5033,
+       39,
+       0.0626
+      ],
+      [
+       1169,
+       1.6245,
+       37,
+       0.3266
+      ],
+      [
+       1170,
+       1.4369,
+       39,
+       0.2799
+      ],
+      [
+       1171,
+       1.1193,
+       38,
+       0.2662
+      ],
+      [
+       1172,
+       1.692,
+       22,
+       0.3199
+      ],
+      [
+       1173,
+       0.4767,
+       40,
+       0.0653
+      ],
+      [
+       1174,
+       1.1193,
+       40,
+       0.2662
+      ],
+      [
+       1175,
+       0.8785,
+       40,
+       0.2208
+      ],
+      [
+       1176,
+       1.0142,
+       38,
+       0.2291
+      ],
+      [
+       1177,
+       1.6245,
+       39,
+       0.3266
+      ],
+      [
+       1178,
+       1.1193,
+       38,
+       0.2662
+      ],
+      [
+       1179,
+       0.2756,
+       15,
+       0.2443
+      ],
+      [
+       1180,
+       0.0876,
+       40,
+       0.0801
+      ],
+      [
+       1181,
+       1.692,
+       24,
+       0.3199
+      ],
+      [
+       1182,
+       0.5033,
+       40,
+       0.0626
+      ],
+      [
+       1183,
+       1.6747,
+       39,
+       0.2562
+      ],
+      [
+       1184,
+       1.9111,
+       39,
+       0.0931
+      ],
+      [
+       1185,
+       1.5938,
+       34,
+       0.2643
+      ],
+      [
+       1186,
+       1.1193,
+       40,
+       0.2662
+      ],
+      [
+       1187,
+       0.4282,
+       40,
+       0.046
+      ],
+      [
+       1188,
+       1.6534,
+       40,
+       0.1433
+      ],
+      [
+       1189,
+       1.5239,
+       39,
+       0.2755
+      ],
+      [
+       1190,
+       -0.6009,
+       40,
+       0.173
+      ],
+      [
+       1191,
+       0.1515,
+       35,
+       0.3492
+      ],
+      [
+       1192,
+       1.1193,
+       40,
+       0.2662
+      ],
+      [
+       1193,
+       1.1193,
+       40,
+       0.2662
+      ],
+      [
+       1194,
+       1.6829,
+       40,
+       0.2596
+      ],
+      [
+       1195,
+       0.9907,
+       40,
+       0.2973
+      ],
+      [
+       1196,
+       0.8472,
+       4,
+       0.1871
+      ],
+      [
+       1197,
+       0.1458,
+       40,
+       0.0743
+      ],
+      [
+       1198,
+       0.1942,
+       39,
+       0.2892
+      ],
+      [
+       1199,
+       0.0,
+       0,
+       0.3834
+      ],
+      [
+       1200,
+       1.8814,
+       37,
+       0.2355
+      ]
+     ],
+     "elapsed_s": 1506.5
+    }
+   ],
+   "oof_by_round": [
+    {
+     "round": 0,
+     "n": 150,
+     "oof_r2": 0.4923008189132184,
+     "policy_rows": 0
+    },
+    {
+     "round": 1,
+     "n": 160,
+     "oof_r2": 0.4866584760934646,
+     "policy_rows": 10
+    },
+    {
+     "round": 2,
+     "n": 170,
+     "oof_r2": 0.6266224999064554,
+     "policy_rows": 20
+    },
+    {
+     "round": 3,
+     "n": 180,
+     "oof_r2": 0.6909414911632066,
+     "policy_rows": 30
+    }
+   ],
+   "real_evaluations": 30,
+   "seed_dataset_n": 150
+  },
+  {
+   "seed": 3,
+   "rounds": [
+    {
+     "round": 1,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 10,
+     "harvested": 196,
+     "mean_predicted_error": 0.06864304599985196,
+     "mean_real_error": 0.16666666666666669,
+     "mean_gap": 0.09802362066681472,
+     "mean_abs_gap": 0.11488556495521066,
+     "best_real_error": 0.041666666666666685,
+     "rows_added": 10,
+     "dataset_n": 160,
+     "oof_r2_after_refit": 0.5866488879769634,
+     "deterministic_edits": [
+      2,
+      0,
+      24,
+      28,
+      29,
+      0,
+      23,
+      27,
+      8,
+      3,
+      17
+     ],
+     "mean_deterministic_edits": 14.636363636363637,
+     "mean_edits_all": 15.270408163265307,
+     "train_curve_tail": [
+      [
+       1151,
+       1.8239,
+       24,
+       0.263
+      ],
+      [
+       1152,
+       -0.2799,
+       17,
+       0.3701
+      ],
+      [
+       1153,
+       0.1485,
+       12,
+       0.3273
+      ],
+      [
+       1154,
+       -1.5047,
+       17,
+       0.2443
+      ],
+      [
+       1155,
+       0.0,
+       14,
+       0.3793
+      ],
+      [
+       1156,
+       1.8584,
+       19,
+       0.2327
+      ],
+      [
+       1157,
+       1.8584,
+       15,
+       0.2327
+      ],
+      [
+       1158,
+       0.8087,
+       16,
+       0.2984
+      ],
+      [
+       1159,
+       3.2176,
+       16,
+       0.0204
+      ],
+      [
+       1160,
+       0.8089,
+       10,
+       0.2984
+      ],
+      [
+       1161,
+       0.028,
+       8,
+       0.4699
+      ],
+      [
+       1162,
+       1.1127,
+       16,
+       0.1591
+      ],
+      [
+       1163,
+       -0.4318,
+       11,
+       0.137
+      ],
+      [
+       1164,
+       -1.0238,
+       20,
+       0.1962
+      ],
+      [
+       1165,
+       2.735,
+       11,
+       0.0686
+      ],
+      [
+       1166,
+       0.2134,
+       17,
+       0.3397
+      ],
+      [
+       1167,
+       0.3768,
+       17,
+       0.3809
+      ],
+      [
+       1168,
+       0.8936,
+       16,
+       0.3292
+      ],
+      [
+       1169,
+       1.8239,
+       25,
+       0.263
+      ],
+      [
+       1170,
+       0.4941,
+       18,
+       0.2507
+      ],
+      [
+       1171,
+       0.1376,
+       11,
+       0.2395
+      ],
+      [
+       1172,
+       1.8239,
+       23,
+       0.263
+      ],
+      [
+       1173,
+       0.1173,
+       3,
+       0.2815
+      ],
+      [
+       1174,
+       1.3441,
+       12,
+       0.1188
+      ],
+      [
+       1175,
+       -0.3801,
+       13,
+       0.168
+      ],
+      [
+       1176,
+       0.878,
+       9,
+       0.3308
+      ],
+      [
+       1177,
+       0.0023,
+       3,
+       0.253
+      ],
+      [
+       1178,
+       0.0265,
+       14,
+       0.2974
+      ],
+      [
+       1179,
+       1.994,
+       14,
+       0.1007
+      ],
+      [
+       1180,
+       0.9737,
+       24,
+       0.3212
+      ],
+      [
+       1181,
+       1.988,
+       25,
+       0.2466
+      ],
+      [
+       1182,
+       0.5503,
+       11,
+       0.2451
+      ],
+      [
+       1183,
+       -1.5047,
+       22,
+       0.2443
+      ],
+      [
+       1184,
+       0.823,
+       14,
+       0.297
+      ],
+      [
+       1185,
+       -0.2158,
+       20,
+       0.1516
+      ],
+      [
+       1186,
+       1.4482,
+       15,
+       0.2446
+      ],
+      [
+       1187,
+       0.2821,
+       12,
+       0.392
+      ],
+      [
+       1188,
+       2.0691,
+       25,
+       0.2117
+      ],
+      [
+       1189,
+       0.8087,
+       11,
+       0.2984
+      ],
+      [
+       1190,
+       0.718,
+       14,
+       0.3869
+      ],
+      [
+       1191,
+       0.6152,
+       29,
+       0.3838
+      ],
+      [
+       1192,
+       1.0261,
+       12,
+       0.1506
+      ],
+      [
+       1193,
+       0.474,
+       25,
+       0.3901
+      ],
+      [
+       1194,
+       -0.7882,
+       10,
+       0.2089
+      ],
+      [
+       1195,
+       1.9659,
+       17,
+       0.2409
+      ],
+      [
+       1196,
+       1.8584,
+       10,
+       0.2327
+      ],
+      [
+       1197,
+       0.8087,
+       10,
+       0.2984
+      ],
+      [
+       1198,
+       -0.381,
+       17,
+       0.3802
+      ],
+      [
+       1199,
+       0.9039,
+       18,
+       0.2889
+      ],
+      [
+       1200,
+       1.3499,
+       17,
+       0.3025
+      ]
+     ],
+     "elapsed_s": 371.8
+    },
+    {
+     "round": 2,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 20,
+     "harvested": 191,
+     "mean_predicted_error": 0.04035319854850959,
+     "mean_real_error": 0.15416666666666665,
+     "mean_gap": 0.11381346811815707,
+     "mean_abs_gap": 0.12092641884393185,
+     "best_real_error": 0.04166666666666663,
+     "rows_added": 10,
+     "dataset_n": 170,
+     "oof_r2_after_refit": 0.6692930092188794,
+     "deterministic_edits": [
+      7,
+      18,
+      0,
+      40,
+      40,
+      40,
+      5,
+      24,
+      40,
+      37,
+      40
+     ],
+     "mean_deterministic_edits": 26.454545454545453,
+     "mean_edits_all": 22.31413612565445,
+     "train_curve_tail": [
+      [
+       1151,
+       -0.3315,
+       24,
+       0.327
+      ],
+      [
+       1152,
+       0.3253,
+       25,
+       0.4178
+      ],
+      [
+       1153,
+       1.7995,
+       24,
+       0.2274
+      ],
+      [
+       1154,
+       0.9109,
+       24,
+       0.1747
+      ],
+      [
+       1155,
+       1.0354,
+       39,
+       0.1803
+      ],
+      [
+       1156,
+       1.0944,
+       31,
+       0.2722
+      ],
+      [
+       1157,
+       1.7404,
+       19,
+       0.2333
+      ],
+      [
+       1158,
+       0.3883,
+       26,
+       0.227
+      ],
+      [
+       1159,
+       0.0798,
+       25,
+       0.492
+      ],
+      [
+       1160,
+       1.6027,
+       34,
+       0.3227
+      ],
+      [
+       1161,
+       -1.4523,
+       28,
+       0.2475
+      ],
+      [
+       1162,
+       1.6156,
+       24,
+       0.22
+      ],
+      [
+       1163,
+       0.569,
+       20,
+       0.29
+      ],
+      [
+       1164,
+       0.0048,
+       24,
+       0.2934
+      ],
+      [
+       1165,
+       0.8352,
+       33,
+       0.1823
+      ],
+      [
+       1166,
+       0.2882,
+       26,
+       0.2651
+      ],
+      [
+       1167,
+       0.6645,
+       29,
+       0.1994
+      ],
+      [
+       1168,
+       1.9343,
+       22,
+       0.1489
+      ],
+      [
+       1169,
+       0.9746,
+       27,
+       0.4015
+      ],
+      [
+       1170,
+       0.8876,
+       26,
+       0.4112
+      ],
+      [
+       1171,
+       -0.3574,
+       25,
+       0.138
+      ],
+      [
+       1172,
+       0.1849,
+       15,
+       0.3238
+      ],
+      [
+       1173,
+       1.6156,
+       24,
+       0.22
+      ],
+      [
+       1174,
+       1.9216,
+       31,
+       0.2152
+      ],
+      [
+       1175,
+       1.9864,
+       36,
+       0.2311
+      ],
+      [
+       1176,
+       1.9864,
+       38,
+       0.2311
+      ],
+      [
+       1177,
+       2.067,
+       14,
+       0.1356
+      ],
+      [
+       1178,
+       0.0845,
+       6,
+       0.113
+      ],
+      [
+       1179,
+       2.1382,
+       22,
+       0.1678
+      ],
+      [
+       1180,
+       0.3126,
+       28,
+       0.2346
+      ],
+      [
+       1181,
+       1.4116,
+       17,
+       0.2012
+      ],
+      [
+       1182,
+       1.2156,
+       28,
+       0.1443
+      ],
+      [
+       1183,
+       -0.5735,
+       18,
+       0.3512
+      ],
+      [
+       1184,
+       0.5072,
+       29,
+       0.2432
+      ],
+      [
+       1185,
+       1.2236,
+       28,
+       0.3073
+      ],
+      [
+       1186,
+       1.1433,
+       11,
+       0.1795
+      ],
+      [
+       1187,
+       1.321,
+       24,
+       0.2976
+      ],
+      [
+       1188,
+       0.5067,
+       17,
+       0.0516
+      ],
+      [
+       1189,
+       0.0469,
+       19,
+       0.0976
+      ],
+      [
+       1190,
+       1.9864,
+       31,
+       0.2311
+      ],
+      [
+       1191,
+       -0.1607,
+       19,
+       0.3584
+      ],
+      [
+       1192,
+       1.9864,
+       21,
+       0.2311
+      ],
+      [
+       1193,
+       0.282,
+       25,
+       0.4718
+      ],
+      [
+       1194,
+       1.4116,
+       18,
+       0.2012
+      ],
+      [
+       1195,
+       -0.4449,
+       21,
+       0.1659
+      ],
+      [
+       1196,
+       2.4127,
+       19,
+       0.1011
+      ],
+      [
+       1197,
+       1.6027,
+       36,
+       0.3227
+      ],
+      [
+       1198,
+       1.3352,
+       35,
+       0.2141
+      ],
+      [
+       1199,
+       1.6156,
+       30,
+       0.22
+      ],
+      [
+       1200,
+       1.0374,
+       25,
+       0.1901
+      ]
+     ],
+     "elapsed_s": 732.9
+    },
+    {
+     "round": 3,
+     "episodes_trained": 1200,
+     "real_evaluations_this_round": 10,
+     "real_evaluations_total": 30,
+     "harvested": 170,
+     "mean_predicted_error": 0.08738441784329636,
+     "mean_real_error": 0.1375,
+     "mean_gap": 0.05011558215670364,
+     "mean_abs_gap": 0.061235492537732604,
+     "best_real_error": 0.0,
+     "rows_added": 10,
+     "dataset_n": 180,
+     "oof_r2_after_refit": 0.6943240845740604,
+     "deterministic_edits": [
+      16,
+      1,
+      0,
+      12,
+      12,
+      6,
+      6,
+      11,
+      8,
+      2,
+      17
+     ],
+     "mean_deterministic_edits": 8.272727272727273,
+     "mean_edits_all": 13.288235294117648,
+     "train_curve_tail": [
+      [
+       1151,
+       1.691,
+       31,
+       0.3084
+      ],
+      [
+       1152,
+       2.102,
+       6,
+       0.2141
+      ],
+      [
+       1153,
+       1.5927,
+       28,
+       0.1416
+      ],
+      [
+       1154,
+       1.5065,
+       14,
+       0.1503
+      ],
+      [
+       1155,
+       2.3837,
+       15,
+       0.1355
+      ],
+      [
+       1156,
+       1.134,
+       23,
+       0.159
+      ],
+      [
+       1157,
+       0.4535,
+       28,
+       0.4547
+      ],
+      [
+       1158,
+       1.4009,
+       16,
+       0.1324
+      ],
+      [
+       1159,
+       0.0,
+       0,
+       0.1314
+      ],
+      [
+       1160,
+       2.4306,
+       20,
+       0.0942
+      ],
+      [
+       1161,
+       -0.4211,
+       3,
+       0.162
+      ],
+      [
+       1162,
+       2.3837,
+       12,
+       0.1355
+      ],
+      [
+       1163,
+       2.4306,
+       17,
+       0.0942
+      ],
+      [
+       1164,
+       2.1289,
+       4,
+       0.2114
+      ],
+      [
+       1165,
+       -0.2669,
+       7,
+       0.1581
+      ],
+      [
+       1166,
+       0.6586,
+       26,
+       0.4127
+      ],
+      [
+       1167,
+       1.4236,
+       11,
+       0.1502
+      ],
+      [
+       1168,
+       0.0331,
+       6,
+       0.1166
+      ],
+      [
+       1169,
+       -0.0642,
+       5,
+       0.1263
+      ],
+      [
+       1170,
+       -0.0164,
+       3,
+       0.133
+      ],
+      [
+       1171,
+       2.4454,
+       4,
+       0.1833
+      ],
+      [
+       1172,
+       2.4454,
+       9,
+       0.1833
+      ],
+      [
+       1173,
+       0.4608,
+       18,
+       0.2264
+      ],
+      [
+       1174,
+       1.691,
+       15,
+       0.3084
+      ],
+      [
+       1175,
+       -0.0639,
+       5,
+       0.1263
+      ],
+      [
+       1176,
+       2.4454,
+       6,
+       0.1833
+      ],
+      [
+       1177,
+       -1.4075,
+       12,
+       0.2606
+      ],
+      [
+       1178,
+       -0.4886,
+       9,
+       0.1687
+      ],
+      [
+       1179,
+       0.3549,
+       27,
+       0.4645
+      ],
+      [
+       1180,
+       -0.3587,
+       3,
+       0.1557
+      ],
+      [
+       1181,
+       2.2798,
+       19,
+       0.1093
+      ],
+      [
+       1182,
+       0.6365,
+       18,
+       0.3528
+      ],
+      [
+       1183,
+       2.1289,
+       6,
+       0.2114
+      ],
+      [
+       1184,
+       -0.279,
+       5,
+       0.1593
+      ],
+      [
+       1185,
+       -0.456,
+       4,
+       0.1655
+      ],
+      [
+       1186,
+       0.7778,
+       18,
+       0.2231
+      ],
+      [
+       1187,
+       2.3837,
+       13,
+       0.1355
+      ],
+      [
+       1188,
+       -1.5048,
+       11,
+       0.2704
+      ],
+      [
+       1189,
+       1.4491,
+       13,
+       0.229
+      ],
+      [
+       1190,
+       1.4312,
+       12,
+       0.356
+      ],
+      [
+       1191,
+       0.8612,
+       6,
+       0.3051
+      ],
+      [
+       1192,
+       2.3837,
+       13,
+       0.1355
+      ],
+      [
+       1193,
+       1.5927,
+       22,
+       0.1416
+      ],
+      [
+       1194,
+       2.4454,
+       6,
+       0.1833
+      ],
+      [
+       1195,
+       2.4306,
+       14,
+       0.0942
+      ],
+      [
+       1196,
+       1.4447,
+       30,
+       0.3555
+      ],
+      [
+       1197,
+       1.2508,
+       22,
+       0.3152
+      ],
+      [
+       1198,
+       1.3103,
+       14,
+       0.2429
+      ],
+      [
+       1199,
+       -0.3531,
+       20,
+       0.1552
+      ],
+      [
+       1200,
+       1.691,
+       22,
+       0.3084
+      ]
+     ],
+     "elapsed_s": 1041.4
+    }
+   ],
+   "oof_by_round": [
+    {
+     "round": 0,
+     "n": 150,
+     "oof_r2": 0.4923008189132184,
+     "policy_rows": 0
+    },
+    {
+     "round": 1,
+     "n": 160,
+     "oof_r2": 0.5866488879769634,
+     "policy_rows": 10
+    },
+    {
+     "round": 2,
+     "n": 170,
+     "oof_r2": 0.6692930092188794,
+     "policy_rows": 20
+    },
+    {
+     "round": 3,
+     "n": 180,
+     "oof_r2": 0.6943240845740604,
+     "policy_rows": 30
+    }
+   ],
+   "real_evaluations": 30,
+   "seed_dataset_n": 150
+  }
+ ]
+}

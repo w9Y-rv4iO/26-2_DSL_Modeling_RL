@@ -1,0 +1,106 @@
+{
+ "stage": {
+  "episodes": 24,
+  "round_time": 60.0,
+  "seed0": 0
+ },
+ "note": "Diagnostic: the SS5 policy at its TRAINING edit budget (40), unpaired.\n\nSS5 pairs on 12 edits because the hill-climb side costs one real evaluation per\nedit. But the policy was trained at edit_budget=40, and observation scalar 297\nis attempts/edit_budget \u2014 so at 12 it reads the same relative clock while having\nonly 30% of the absolute edits its learned edit sequence was shaped around.\nThis measures whether that truncation is what hurts: same starts, same policy,\n40 edits, one real search-stage evaluation each. No hill-climb comparison is\npossible at this budget (41 x 6 = 246 real evaluations), so this is a\nDIAGNOSTIC and not a table row.\n",
+ "rows": [
+  {
+   "start": "Lv3",
+   "edit_budget": 12,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.375,
+   "edits": 7,
+   "surrogate_balance_error": 0.09935632832082253
+  },
+  {
+   "start": "Lv3",
+   "edit_budget": 40,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.375,
+   "edits": 7,
+   "surrogate_balance_error": 0.09935632832082253
+  },
+  {
+   "start": "Warren",
+   "edit_budget": 12,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.25,
+   "edits": 8,
+   "surrogate_balance_error": 0.10154212274356256
+  },
+  {
+   "start": "Warren",
+   "edit_budget": 40,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.25,
+   "edits": 8,
+   "surrogate_balance_error": 0.10154212274356256
+  },
+  {
+   "start": "Atrium",
+   "edit_budget": 12,
+   "start_balance_error": 0.4583333333333333,
+   "balance_error": 0.5,
+   "edits": 11,
+   "surrogate_balance_error": 0.3323869568169693
+  },
+  {
+   "start": "Atrium",
+   "edit_budget": 40,
+   "start_balance_error": 0.4583333333333333,
+   "balance_error": 0.5,
+   "edits": 11,
+   "surrogate_balance_error": 0.3323869568169693
+  },
+  {
+   "start": "Spiral",
+   "edit_budget": 12,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.20833333333333331,
+   "edits": 3,
+   "surrogate_balance_error": 0.14110601116425542
+  },
+  {
+   "start": "Spiral",
+   "edit_budget": 40,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.25,
+   "edits": 8,
+   "surrogate_balance_error": 0.12885674478299242
+  },
+  {
+   "start": "Loops",
+   "edit_budget": 12,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.125,
+   "edits": 7,
+   "surrogate_balance_error": 0.03523238891768954
+  },
+  {
+   "start": "Loops",
+   "edit_budget": 40,
+   "start_balance_error": 0.16666666666666669,
+   "balance_error": 0.125,
+   "edits": 7,
+   "surrogate_balance_error": 0.03523238891768954
+  },
+  {
+   "start": "random#5000000",
+   "edit_budget": 12,
+   "start_balance_error": 0.5,
+   "balance_error": 0.5,
+   "edits": 10,
+   "surrogate_balance_error": 0.46352669465113905
+  },
+  {
+   "start": "random#5000000",
+   "edit_budget": 40,
+   "start_balance_error": 0.5,
+   "balance_error": 0.5,
+   "edits": 10,
+   "surrogate_balance_error": 0.46352669465113905
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+  "tag": "curve_curriculum_seed13",
+  "role": "runner",
+  "map": "Lv3",
+  "episodes": 50,
+  "items": false,
+  "opponent": "heuristic",
+  "deterministic": false,
+  "curve": [
+    {
+      "train_steps": 1081344,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1081344_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.08,
+      "avg_steps": 1156.48,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1179648,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1179648_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.04,
+      "avg_steps": 1425.38,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1277952,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1277952_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.24,
+      "avg_steps": 1162.98,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1376256,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1376256_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.46,
+      "avg_steps": 1332.18,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1474560,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1474560_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.64,
+      "avg_steps": 1432.6,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1572864,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1572864_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.84,
+      "avg_steps": 1113.68,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1671168,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1671168_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.82,
+      "avg_steps": 1089.36,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1769472,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1769472_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.78,
+      "avg_steps": 1045.42,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1867776,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1867776_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.64,
+      "avg_steps": 1164.86,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1966080,
+      "model": "runs\\curriculum_seed13\\lv3\\checkpoints\\ppo_1966080_steps.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.66,
+      "avg_steps": 1116.68,
+      "avg_win_steps": null
+    },
+    {
+      "train_steps": 1998848,
+      "model": "runs\\curriculum_seed13\\lv3\\model.zip",
+      "win_rate": 0.0,
+      "escape_rate": 0.0,
+      "avg_missions": 0.78,
+      "avg_steps": 1269.28,
+      "avg_win_steps": null
+    }
+  ]
+}

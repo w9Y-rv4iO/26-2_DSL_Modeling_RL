@@ -1,0 +1,8 @@
+{
+  "_note": "Curriculum stage 1/3: pure tag, boundary walls only. Budget rule: lv1+lv2+lv3 steps must equal lv3_direct steps. All step counts are multiples of one PPO rollout (8 envs x 2048 = 16384) so SB3's round-up-to-a-rollout cannot skew the budgets. PPO hyperparameters live in train.py DEFAULTS so they cannot drift between arms.",
+  "map": "Lv1",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 393216,
+  "items": false
+}

@@ -1,0 +1,14 @@
+{
+  "_note": "v2 curriculum stage 1/3: pure tag, boundary walls only. Same map and same step budget as configs/lv1.json — what changes in v2 is the REWARD (crossplay) and the win-condition rules, which are identical across all four v2 configs so the arms differ in nothing but the curriculum. Lv1 has no generators and no exits, so required_generators/active_exits/late_exits are inert here; they are stated anyway so the four configs can be diffed against each other and show one difference only. See docs/study-v2-protocol.md.",
+  "map": "Lv1",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 393216,
+  "items": false,
+  "reward": "crossplay",
+  "required_generators": 3,
+  "active_exits": 3,
+  "random_spawns": true,
+  "late_exits": true,
+  "random_generators": false
+}

@@ -1,0 +1,8 @@
+{
+  "_note": "Curriculum stage 3/3: the final map with interior obstacles. Run with --init <lv2 run>/model.zip.",
+  "map": "Lv3",
+  "role": "runner",
+  "opponent": "heuristic",
+  "steps": 1015808,
+  "items": false
+}

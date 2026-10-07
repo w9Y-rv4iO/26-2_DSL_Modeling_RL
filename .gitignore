@@ -1,0 +1,39 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# RL artifacts — trained models are distributed as GitHub release assets
+*.zip
+*.pt
+runs/
+checkpoints/
+logs/
+tensorboard/
+train_*.log
+
+# gameplay clips are regenerable from the seed in the filename (scripts/record.py)
+presentation/clips/
+
+# Balance-evaluation caches (mapstudy). One sha1-named JSON per (map, protocol);
+# every entry is re-derivable by re-running the same command. The ANALYSIS
+# outputs (mapstudy/results/*.json) are committed.
+mapstudy/cache/
+results/skill_sweep_cache*/
+
+# Figures the plotting scripts regenerate but this repository does not commit
+# (only the figures the READMEs embed are tracked)
+*_dark.png
+crossplay/figures/fig2_*.png
+crossplay/figures/fig3_*.png
+mapgen/results/figures/corr_features.png
+mapgen/results/figures/replay_*.png
+mapgen/results/figures/team_size.png
+mapgen/results/figures/training.png
+mapgen/results/figures/trends_vs_tau.png
+crossplay/logs/
+
+# local scratch
+.scratch/
+traj_baseline.json
